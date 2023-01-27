@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply box-border m-0 p-0;
+  }
+}
+
+@font-face {
+  font-family: "AvenirLight";
+  src: url("./assets/Fonts/Avenir/Avenir-Light-07.ttf");
+}
+
+@font-face {
+  font-family: "AvenirRoman";
+  src: url("./assets/Fonts/Avenir/Avenir-Roman-12.ttf");
+}
+
+@font-face {
+  font-family: "AvenirBook";
+  src: url("./assets/Fonts/Avenir/Avenir-Book-01.ttf");
+}
+
+@font-face {
+  font-family: "AvenirMedium";
+  src: url("./assets/Fonts/Avenir/Avenir-Medium-09.ttf");
+}
+
+@font-face {
+  font-family: "AvenirHeavy";
+  src: url("./assets/Fonts/Avenir/Avenir-Heavy-05.ttf");
+}
+
+@font-face {
+  font-family: "Valencia";
+  src: url("./assets/Fonts/Valencia/Valencia.ttf");
+}
