@@ -41,16 +41,24 @@ const Navbar = () => {
       </ul>
       <ul className="flex gap-[34px] text-white">
         <li>
-          <BsGithub size={20} />
+          <Link to={"https://github.com/ojasggg"}>
+            <BsGithub size={20} />
+          </Link>
         </li>
         <li>
-          <BsLinkedin size={20} />
+          <Link to={"https://www.linkedin.com/in/ojash-gurung"}>
+            <BsLinkedin size={20} />
+          </Link>
         </li>
         <li>
-          <BsTwitter size={20} />
+          <Link to={"https://twitter.com/codeOjash"}>
+            <BsTwitter size={20} />
+          </Link>
         </li>
         <li>
-          <MdEmail size={22} />
+          <Link to={"#"}>
+            <MdEmail size={22} />
+          </Link>
         </li>
       </ul>
     </nav>
