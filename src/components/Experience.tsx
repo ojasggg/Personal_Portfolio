@@ -3,10 +3,10 @@ import { BsArrowUpRight } from "react-icons/bs";
 const Experience = () => {
   return (
     <div className="relative">
-      <h1 className="absolute top-10 left-0 z-[-10] p-0 font-AvenirHeavy text-[200px] uppercase leading-none text-white/10">
+      <h1 className="absolute top-10 left-0 z-[1] p-0 font-AvenirHeavy text-[200px] uppercase leading-none text-white/10">
         Experience
       </h1>
-      <div className="ml-[142px] pt-[120px]">
+      <div className="z-[2] ml-[142px] pt-[120px]">
         <p className="font-AvenirBook text-[18px] text-white/60 ">2021</p>
         <div className="flex items-center gap-4 pt-2">
           <h3 className="z-10 p-0 font-AvenirMedium text-[30px] leading-none text-white">

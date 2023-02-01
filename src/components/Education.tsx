@@ -22,11 +22,11 @@ const educationList = [
 const Education = () => {
   return (
     <div className="relative">
-      <h1 className="absolute top-5 right-0 z-[-10] p-0 font-AvenirHeavy text-[200px] uppercase leading-none text-white/10">
+      <h1 className="absolute top-5 right-0 z-[1] p-0 font-AvenirHeavy text-[200px] uppercase leading-none text-white/10">
         Education
       </h1>
 
-      <div className="ml-[700px] flex flex-col gap-6 pt-[120px]">
+      <div className="z-[2] ml-[700px] flex flex-col gap-6 pt-[120px]">
         {educationList.map((education, index) => (
           <div>
             <p className="font-AvenirBook text-[18px] uppercase text-white/60">
