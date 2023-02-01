@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{ts,tsx,js,jsx}"],
+  content: ["./src/**/*.{tsx,jsx,js,ts}"],
   theme: {
     fontFamily: {
       AvenirLight: ["AvenirLight", "sans-serif"],
