@@ -4,7 +4,15 @@
 
 @layer base {
   body {
-    @apply box-border m-0 p-0;
+    @apply m-0 box-border bg-black p-0 text-white;
+  }
+
+  .text-reveal-after::after {
+    @apply absolute top-0 left-0 h-full w-full bg-[#00f0b5] content-none;
+  }
+
+  input {
+    @apply border-0 outline-0;
   }
 }
 
@@ -36,4 +44,74 @@
 @font-face {
   font-family: "Valencia";
   src: url("./assets/Fonts/Valencia/Valencia.ttf");
+}
+
+h1 {
+  font-family: "AvenirHeavy";
+  src: url("./assets/Fonts/Avenir/Avenir-Heavy-05.ttf");
+  font-size: 42px;
+  padding: 0.4em 1em;
+}
+
+.rev-block {
+  position: absolute;
+}
+
+.rev-block span {
+  opacity: 0;
+  animation: appear-text 0.0001s linear forwards;
+  animation-delay: 1.4s;
+}
+
+.rev-block::after {
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  background-color: #00f0b5;
+  animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  animation-delay: 1s;
+}
+
+.arrow-animate {
+  animation: arrow-animate 2s infinite;
+  animation-delay: 1s;
+}
+
+@keyframes rev-block {
+  0% {
+    left: 0;
+    width: 0%;
+  }
+  50% {
+    left: 0;
+    width: 100%;
+  }
+  100% {
+    left: 100%;
+    width: 0%;
+  }
+}
+
+@keyframes appear-text {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes arrow-animate {
+  0% {
+    padding-bottom: 0;
+  }
+  50% {
+    padding-bottom: 20px;
+  }
+  100% {
+    padding-bottom: 0;
+  }
 }
