@@ -2,20 +2,23 @@ import React from "react";
 
 const AboutMe = () => {
   return (
-    <section className="relative h-[573px]">
-      <h1 className="absolute top-10 left-0 z-[1] p-0 font-AvenirHeavy text-[200px] leading-none text-white/10">
+    <section className="relative m-auto h-[100vh] lg:w-[1200px] xl:w-[1600px]">
+      {/* TODO:  Gradiant for all background Headings*/}
+      {/* TODO:  Can Also add Picture section to showcase my picture*/}
+      <h1 className="absolute top-10 left-0 z-[-10] p-0 font-AvenirHeavy text-[200px] leading-none text-white/10 lg:text-white/20">
         ABOUT ME
       </h1>
-      <div className="z-[2] mr-[57px] ml-[263px]">
-        <h3 className="pt-[150px] font-AvenirLight text-[30px] text-white">
+      {/* TODO: Choose Gradiant color for this aboutme paragraph */}
+      {/* TODO: Highlight some key points from the paragraph if needed */}
+      <div className="z-[2] mr-[57px] ml-[263px] pt-[140px] xl:pt-[160px]">
+        <h3 className="w-[95%] bg-gradient-to-r from-white/80 to-white bg-clip-text font-AvenirMedium text-[22px] text-transparent xl:text-[26px]">
           Love to play with design and convert them into functionable websites,
-          aiming always to keep it <br /> responsive and adaptive, optimized,
-          performant and accessible. But I felt things were still missing so{" "}
-          <br /> I explored backend specially RestAPI development, data model
-          schemas and database management <br /> with deployment of websites.
-          Well there is not much to say but I love what I do and love to work on{" "}
-          <br /> ambitious projects with positive people in a conducive work
-          environment.
+          aiming always to keep it responsive and adaptive, optimized,
+          performant and accessible. But I felt things were still missing so I
+          explored backend specially RestAPI development, data model schemas and
+          database management with deployment of websites. Well there is not
+          much to say but I love what I do and love to work on ] ambitious
+          projects with positive people in a conducive work environment.
         </h3>
       </div>
     </section>
