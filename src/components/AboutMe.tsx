@@ -2,8 +2,9 @@ import React from "react";
 
 const AboutMe = () => {
   return (
-    <section className="relative m-auto h-[573px] lg:w-[1200px] xl:w-[1600px]">
+    <section className="relative m-auto h-[100vh] lg:w-[1200px] xl:w-[1600px]">
       {/* TODO:  Gradiant for all background Headings*/}
+      {/* TODO:  Can Also add Picture section to showcase my picture*/}
       <h1 className="absolute top-10 left-0 z-[-10] p-0 font-AvenirHeavy text-[200px] leading-none text-white/10 lg:text-white/20">
         ABOUT ME
       </h1>
