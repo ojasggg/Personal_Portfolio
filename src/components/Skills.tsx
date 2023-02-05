@@ -53,15 +53,15 @@ const skillLists: Skill[] = [
 
 const Skills = () => {
   return (
-    <section className="relative flex h-[100vh] flex-col justify-center gap-16 px-[200px]">
-      <h1 className="absolute left-[50%] top-[50%] z-[1] -translate-x-1/2 -translate-y-1/2 p-0 font-AvenirHeavy text-[200px] uppercase leading-none text-white/10">
-        Skills
+    <section className="relative mx-auto flex h-[100vh] flex-col justify-center gap-16 lg:w-[1000px] xl:w-[1200px]">
+      <h1 className="absolute z-[-10] p-0 font-AvenirHeavy text-[200px] uppercase leading-none lg:top-[36vh] lg:left-[30vh] lg:text-white/20 xl:top-[40vh] xl:left-[30vh] xl:text-white/10">
+        skills
       </h1>
       {/* Top */}
-      <div className="z-[2] flex justify-between gap-[112px]">
+      <div className="z-[2] flex justify-between xl:gap-[80px]">
         {skillLists.map((skill, index) => (
           <div key={index}>
-            <h4 className="font-AvenirHeavy text-[18px] uppercase text-white">
+            <h4 className="font-AvenirHeavy text-[16px] uppercase text-white xl:text-[18px]">
               {skill.skillName}
             </h4>
             <ul
@@ -74,7 +74,7 @@ const Skills = () => {
               {skill.skillSets?.map((perSkill, index) => (
                 <li
                   key={index}
-                  className="list-inside list-disc text-[18px] text-white/60"
+                  className="list-inside list-disc font-AvenirMedium text-[16px] text-white/60 xl:text-[18px]"
                 >
                   {perSkill}
                 </li>
@@ -91,7 +91,7 @@ const Skills = () => {
           </h4>
           <ul className="mt-4 flex flex-col gap-2">
             <div className="flex items-center gap-2">
-              <li className="list-inside list-disc items-center font-AvenirMedium text-[18px] text-white/60">
+              <li className="list-inside list-disc items-center font-AvenirMedium text-[16px] text-white/60 xl:text-[18px]">
                 Googling
               </li>
               <img src={gif1} alt="Smile Emoji GIF" width={30} />
@@ -105,7 +105,7 @@ const Skills = () => {
           </ul>
         </div>
         <div>
-          <p className="font-AvenirHeavy text-[18px] text-white/60">
+          <p className="font-AvenirMedium text-[18px] text-white/60">
             Developers need {""}
             <span className="text-white">
               to learn and be updated with latest technologies everyday
@@ -116,7 +116,7 @@ const Skills = () => {
             </span>
             .
           </p>
-          <p className="mt-2 font-AvenirHeavy text-[18px] text-white/60">
+          <p className="mt-2 font-AvenirMedium text-[18px] text-white/60">
             See{" "}
             <Link to="#" className="text-white underline">
               more frameworks/libraries here.
