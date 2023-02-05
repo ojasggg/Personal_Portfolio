@@ -43,7 +43,7 @@ const Education = () => {
                 </p>
               </div>
               <div className="mt-4">
-                <p className="leading-wide max-w-[1040px] font-AvenirMedium text-[20px] text-white/60 xl:text-[24px] xl:leading-10">
+                <p className="leading-wide max-w-[1040px] font-AvenirMedium text-[18px] text-white/60 xl:text-[24px] xl:leading-10">
                   {education.course}
                 </p>
               </div>

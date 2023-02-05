@@ -18,14 +18,14 @@ const Experience = () => {
           </p>
         </div>
         <div className="mt-4">
-          <p className="leading-wide max-w-[1040px] font-AvenirMedium text-[20px] text-white/60 xl:text-[24px] xl:leading-10">
-            <span className="font-AvenirHeavy text-white">
+          <p className="leading-wide max-w-[1040px] font-AvenirRoman text-[20px] text-white/60 xl:text-[24px] xl:leading-10">
+            <span className="font-AvenirMedium text-white">
               Winner of 2021 IOT EXO
             </span>
             , my team{" "}
-            <span className="font-AvenirHeavy text-white">BrightNight</span> we
+            <span className="font-AvenirMedium text-white">BrightNight</span> we
             created a{" "}
-            <span className="font-AvenirHeavy text-white">
+            <span className="font-AvenirMedium text-white">
               {" "}
               Smart Glasses for visually <br /> impaired people.
             </span>
