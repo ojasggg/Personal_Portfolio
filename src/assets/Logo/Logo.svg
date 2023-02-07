@@ -1,31 +1,6 @@
-import { Link } from "react-router-dom";
-
-type navItems = {
-  itemName: string;
-  active: boolean;
-  link: string;
-  button: boolean;
-};
-
-const navItems: navItems[] = [
-  { itemName: "Home", active: true, link: "/home", button: false },
-  { itemName: "About", active: false, link: "/about", button: false },
-  { itemName: "Projects", active: false, link: "/projects", button: false },
-  { itemName: "Resume", active: false, link: "/resume", button: true },
-];
-
-const Navbar = () => {
-  return (
-    <nav className="m-auto mt-[30px] flex items-center justify-between lg:w-[1200px] xl:w-[1600px]">
-      {/* Ojash Gurung Logo */}
-      <div>
-        {/* TODO: Logo Animation 
-        1) Rotate Individual letters
-        2) Add Name along side the logo 
-        */}
-        <svg
-          width="40"
-          height="40"
+<svg
+          width="20"
+          height="20"
           viewBox="0 0 40 40"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -43,26 +18,3 @@ const Navbar = () => {
             fill="white"
           />
         </svg>
-      </div>
-      {/* Nav Items */}
-      <ul className="flex items-center justify-center gap-[40px] ">
-        {navItems.map((navItem, index) => (
-          <li
-            key={index}
-            className={`${
-              navItem.active || navItem.button ? "text-white" : "text-white/60"
-            } ${
-              navItem.button
-                ? "cursor-pointer rounded-lg border border-white p-2 px-4"
-                : ""
-            } font-AvenirRoman text-[14px] uppercase`}
-          >
-            <Link to={navItem.link}>{navItem.itemName}</Link>
-          </li>
-        ))}
-      </ul>
-    </nav>
-  );
-};
-
-export default Navbar;

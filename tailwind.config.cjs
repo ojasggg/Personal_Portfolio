@@ -11,6 +11,17 @@ module.exports = {
       Valencia: ["Valencia", "cursive"],
     },
     extend: {
+      animation: {
+        "visible-animate":
+          "visible 0.8s cubic-bezier(0.645, 0.045, 0.355, 1) ease-in-out",
+      },
+      keyframes: {
+        visible: {
+          "0%": { opacity: 0 },
+          "50%": { opacity: 0.5 },
+          "100%": { opacity: 1 },
+        },
+      },
       colors: {
         light: "#f1f3f2",
         dark: "#141414",

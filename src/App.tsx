@@ -54,18 +54,18 @@ const App = () => {
       <ExperienceAndEducation />
       <Skills />
       <Contact />
-      <div className="fixed bottom-0 lg:right-[70px] xl:right-[150px]">
+      <div className="fixed bottom-0 lg:right-[70px] xl:right-[100px]">
         <div className="flex flex-col items-center gap-8">
           <ul className="flex flex-col items-center gap-[30px] text-white/60">
             {socialItems.map((socialItem, index) => (
               <li key={index}>
-                <Link to={socialItem.link}>
+                <Link to={socialItem.link} target="_blank">
                   {socialItem.logo && socialItem.logo}
                 </Link>
               </li>
             ))}
           </ul>
-          <div className="h-24 w-[2px] rounded-full bg-white"></div>
+          <div className="h-24 w-[2px] rounded-full bg-white/60"></div>
         </div>
       </div>
     </div>
