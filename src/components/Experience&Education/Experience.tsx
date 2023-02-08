@@ -1,4 +1,5 @@
 import { BsArrowUpRight } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const Experience = () => {
   return (
@@ -36,16 +37,24 @@ const Experience = () => {
           </p>
         </div>
         <div className="mt-[30px] flex items-center gap-4">
-          <button className="flex items-center gap-2 rounded-full bg-white py-[10px] px-[30px] text-black">
+          <Link
+            className="flex items-center gap-2 rounded-full bg-white py-[10px] px-[30px] text-black transition-all duration-200 ease-in hover:scale-105"
+            to="https://github.com/ojasggg/2021_IOT_Expo_Projects.git"
+            target="_blank"
+          >
             <p className="font-AvenirMedium text-[16px] uppercase">Github</p>
             <BsArrowUpRight size={16} />
-          </button>
-          <button className="flex items-center gap-2 rounded-full border border-white/60 bg-transparent py-[10px] px-[30px]">
+          </Link>
+          <Link
+            className="flex items-center gap-2 rounded-full border border-white/60 bg-transparent py-[10px] px-[30px] transition-all duration-200 ease-in hover:scale-105"
+            to="https://github.com/ojasggg/2021_IOT_Expo_Projects"
+            target="_blank"
+          >
             <p className="font-AvenirMedium text-[16px] uppercase">
               Project Link
             </p>
             <BsArrowUpRight size={16} />
-          </button>
+          </Link>
         </div>
       </div>
     </div>

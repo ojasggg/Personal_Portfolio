@@ -28,7 +28,7 @@ const AboutMe = () => {
       </div>
       <div className="mt-10 flex items-center justify-center">
         <Link
-          className="flex w-fit items-center gap-2 rounded-xl border border-white/60 p-3 px-4 text-[20px] text-white/60"
+          className="flex w-fit items-center gap-2 rounded-xl border border-white/60 p-3 px-4 text-[20px] text-white/60 transition-all duration-200 ease-in hover:scale-105"
           to="/about"
         >
           <p>About me</p>
