@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <section className="bg-[#D3D2D0]">
       <div className="relative m-auto flex h-[100vh] flex-col justify-end lg:w-[1100px] xl:w-[1500px]">
-        <h1 className="absolute top-3 left-0 z-[1] p-0 font-AvenirHeavy text-[160px] uppercase leading-none text-white/30 xl:text-[200px] xl:text-white/10">
+        <h1 className="absolute top-3 left-0 z-[1] p-0 font-AvenirHeavy text-[160px] uppercase leading-none text-white/30 xl:text-[200px] xl:text-white/30">
           Contact
         </h1>
         {/* Content and Form */}
