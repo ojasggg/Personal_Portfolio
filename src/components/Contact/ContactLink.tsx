@@ -32,7 +32,7 @@ const ContactLink = () => {
         <h1 className="mb-2 p-0 font-AvenirRoman text-[12px] uppercase  leading-none text-black xl:text-[14px]">
           Extras
         </h1>
-        <ul className="flex items-center gap-[14px] font-AvenirMedium text-[16px] uppercase text-black underline xl:text-[18px]">
+        <ul className="flex items-center gap-[14px] font-AvenirMedium text-[14px] uppercase text-black underline xl:text-[18px]">
           <li>
             <Link to="/resume">Resume</Link>
           </li>
