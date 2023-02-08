@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import gif1 from "../assets/Gifs/beaming-face-with-smiling-eyes.gif";
-import gif2 from "../assets/Gifs/grinning-face-with-sweat.gif";
+import gif1 from "../../assets/Gifs/beaming-face-with-smiling-eyes.gif";
+import gif2 from "../../assets/Gifs/grinning-face-with-sweat.gif";
 
 type Skill = {
   skillName: string;

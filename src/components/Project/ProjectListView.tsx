@@ -1,4 +1,4 @@
-import React, { MouseEvent, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { lerp } from "../../utils/utils.js";
 
 type projects = {
@@ -17,7 +17,7 @@ type propsType = {
 
 const ProjectListView = ({ listView, projects }: propsType) => {
   const [divPosition, setDivPosition] = useState({ top: 0, left: 0 });
-  const [image, setImage] = useState();
+  const [image, setImage] = useState<projects>();
 
   const [showImage, setShowImage] = useState(false);
   let cursorConfigs: any = {
@@ -25,12 +25,12 @@ const ProjectListView = ({ listView, projects }: propsType) => {
     y: { previous: 0, current: 0, amt: 0.2 },
   };
 
-  const handleShowImage = (image: any) => {
+  const handleShowImage = (image: projects) => {
     setShowImage(true);
     setImage(image);
   };
 
-  function onMouseMoveEv(event: MouseEvent): any {
+  function onMouseMoveEv(event: MouseEvent) {
     const { clientX, clientY } = event;
 
     const mouseX = clientX;
@@ -106,7 +106,7 @@ const ProjectListView = ({ listView, projects }: propsType) => {
         <img
           className="h-full w-full rounded-lg object-cover"
           src={image ? image.projectCover : ""}
-          alt={image ? image.projectName : ""}
+          alt={image ? image.projectName : "Image"}
         />
         <div className="z-1 absolute top-0 left-0  flex h-full w-full items-center justify-center">
           <button className="flex h-20 w-20 items-center justify-center rounded-full bg-blue-600 font-AvenirRoman text-[18px] ">
