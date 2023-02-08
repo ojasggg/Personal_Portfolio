@@ -93,7 +93,7 @@ const ProjectListView = ({ listView, projects }: propsType) => {
       <div
         className={`absolute ${
           showImage ? "visible" : "hidden"
-        } top-[-24px] left-[-24px] z-[10] h-[400px] w-[500px] rounded-lg`}
+        } top-[-24px] left-[-24px] z-[10] h-[400px] w-[500px] rounded-lg xl:h-[500px] xl:w-[600px]`}
         style={{
           // top: divPosition.top,
           // left: divPosition.left,
@@ -108,8 +108,8 @@ const ProjectListView = ({ listView, projects }: propsType) => {
           src={image ? image.projectCover : ""}
           alt={image ? image.projectName : "Image"}
         />
-        <div className="z-1 absolute top-0 left-0  flex h-full w-full items-center justify-center">
-          <button className="flex h-20 w-20 items-center justify-center rounded-full bg-blue-600 font-AvenirRoman text-[18px] ">
+        <div className="z-1 absolute top-0 left-0 flex h-full w-full items-center justify-center">
+          <button className="flex h-20 w-20 items-center justify-center rounded-full bg-blue-600 font-AvenirRoman text-[18px] xl:h-32 xl:w-32 ">
             View
           </button>
         </div>
