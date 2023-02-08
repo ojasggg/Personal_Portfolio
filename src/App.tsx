@@ -1,15 +1,8 @@
 import { BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
-import { Link } from "react-router-dom";
-import {
-  Navbar,
-  Hero,
-  AboutMe,
-  Project,
-  ExperienceAndEducation,
-  Skills,
-  Contact,
-} from "./components";
+import { Link, Route, Routes } from "react-router-dom";
+import { Navbar } from "./components";
+import { About, Error, Home, Projects, SiteCredit } from "./pages";
 
 type socialItems = {
   iconName: string;
@@ -45,20 +38,24 @@ const App = () => {
   // TODO: Animation Left
   return (
     <div>
-      <div className="h-[100vh]">
-        <Navbar />
-        <Hero />
-      </div>
-      <AboutMe />
-      <Project />
-      <ExperienceAndEducation />
-      <Skills />
-      <Contact />
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/site-credits" element={<SiteCredit />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="*" element={<Error />} />
+      </Routes>
+      {/* Socials Fixed */}
       <div className="fixed bottom-0 lg:right-[70px] xl:right-[100px]">
         <div className="flex flex-col items-center gap-8">
           <ul className="flex flex-col items-center gap-[30px] text-white/60">
             {socialItems.map((socialItem, index) => (
-              <li key={index}>
+              <li
+                key={index}
+                className="transition-all duration-150 ease-in-out hover:-translate-y-1 hover:scale-105 hover:text-white"
+              >
                 <Link to={socialItem.link} target="_blank">
                   {socialItem.logo && socialItem.logo}
                 </Link>
