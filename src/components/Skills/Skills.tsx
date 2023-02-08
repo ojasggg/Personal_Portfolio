@@ -110,18 +110,18 @@ const Skills = () => {
             <span className="text-white">
               to learn and be updated with latest technologies everyday
             </span>
-            , so <br /> this list could get really long{" "}
+            , so <br /> this list got really long{" "}
             <span className="inline-block">
               <img src={gif2} alt="Tense Emoji Gif" width={30} />
             </span>
             .
           </p>
-          <p className="mt-2 font-AvenirMedium text-[18px] text-white/60">
+          {/* <p className="mt-2 font-AvenirMedium text-[18px] text-white/60">
             See{" "}
             <Link to="#" className="text-white underline">
               more frameworks/libraries here.
             </Link>
-          </p>
+          </p> */}
         </div>
       </div>
     </section>
