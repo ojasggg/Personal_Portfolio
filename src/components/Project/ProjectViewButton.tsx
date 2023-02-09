@@ -2,9 +2,14 @@ import React from "react";
 import { AiOutlineUnorderedList } from "react-icons/ai";
 import { RxDashboard } from "react-icons/rx";
 
-const ProjectViewButton = ({ listView, setListView }) => {
+type propsType = {
+  listView: boolean;
+  setListView: React.Dispatch<React.SetStateAction<boolean>>;
+};
+
+const ProjectViewButton = ({ listView, setListView }: propsType) => {
   return (
-    <div className="mx-auto mt-10 flex justify-end lg:w-[1100px] xl:w-[1500px]">
+    <div className="mx-auto mt-10 flex justify-end max-md:hidden lg:w-[1100px] xl:w-[1500px]">
       <div className="flex items-center justify-end gap-4">
         <button
           className={`${

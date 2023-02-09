@@ -11,9 +11,9 @@ const Project = () => {
   const [listView, setListView] = useState<boolean>(true);
 
   return (
-    <section className="h-fit overflow-hidden">
+    <section className="mt-20 h-fit overflow-hidden max-md:mx-auto max-md:w-[90vw]">
       <div>
-        <h1 className="top-10 left-0 z-[-10] mx-auto p-0 font-AvenirHeavy text-[200px] uppercase leading-none text-white/10 lg:w-[1100px] lg:text-white/20 xl:w-[1500px]">
+        <h1 className="top-10 left-0 z-[-10] mx-auto p-0 font-AvenirHeavy text-[200px] uppercase leading-none text-white/20 max-md:text-[140px] lg:w-[1100px] xl:w-[1500px]">
           my <br /> <span className="text-white/80">projects</span>
         </h1>
         {/* Grid or Listview */}
