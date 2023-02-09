@@ -29,8 +29,8 @@ const ProjectGridView = ({ listView, projects }: propsType) => {
     setMouseIn(false);
   };
   return (
-    <div className={`${listView ? "hidden" : "visible"} w-full`}>
-      <div className="grid lg:grid-cols-3 xl:grid-cols-4">
+    <div className={`${listView ? "visible" : "visible"} w-full`}>
+      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {/* Project Card */}
         {projects.map((project, index) => (
           <div
@@ -38,7 +38,7 @@ const ProjectGridView = ({ listView, projects }: propsType) => {
               project.projectBgColor !== null
                 ? project.projectBgColor
                 : "bg-green-200"
-            } relative flex items-center justify-center overflow-hidden lg:h-[340px] lg:w-[1/3] xl:h-[400px] xl:w-[1/4]`}
+            } relative flex items-center justify-center overflow-hidden md:h-[240px] md:w-[1/2] lg:h-[340px] lg:w-[1/3] xl:h-[400px] xl:w-[1/4]`}
             key={index}
           >
             <div
