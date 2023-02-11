@@ -4,22 +4,24 @@ import { Link } from "react-router-dom";
 const Experience = () => {
   return (
     <div className="relative">
-      <h1 className="absolute top-10 left-0 z-[-1] p-0 font-AvenirHeavy text-[160px] uppercase leading-none text-white/20 xl:text-[200px] xl:text-white/10">
+      <h1 className="absolute top-10 left-0 z-[-1] p-0 font-AvenirHeavy text-[70px] uppercase leading-none tracking-tighter text-white/20 lg:text-[160px] xl:text-[200px] xl:text-white/10">
         Experience
       </h1>
-      <div className="z-[10] ml-[142px] pt-[120px]">
-        <p className="font-AvenirBook text-[18px] text-white/60 ">2021</p>
-        <div className="flex items-center gap-4 pt-2">
-          <h3 className="z-10 p-0 font-AvenirMedium text-[26px] uppercase leading-none text-white xl:text-[30px]">
+      <div className="z-[10] m-auto w-[90%] pt-[160px] lg:ml-[142px] lg:pt-[120px]">
+        <p className="font-AvenirBook text-[14px] text-white/60 lg:text-[18px] ">
+          2021
+        </p>
+        <div className="flex items-center gap-2 lg:gap-4 lg:pt-2">
+          <h3 className="z-10 p-0 font-AvenirMedium text-[16px] uppercase leading-none text-white lg:text-[26px] xl:text-[30px]">
             2021 IOT EXPO
           </h3>
-          <div className="h-1 w-10 rounded-full bg-white lg:h-[2px] "></div>
-          <p className="z-10 p-0 font-AvenirLight text-[18px]  leading-none text-white/60 xl:text-[20px]">
+          <div className="h-[2px] w-10 rounded-full bg-white xl:h-1 "></div>
+          <p className="z-10 p-0 font-AvenirLight text-[16px] leading-none text-white/60 lg:text-[18px] xl:text-[20px]">
             Softwarica College of IT & E-commerce
           </p>
         </div>
         <div className="mt-4">
-          <p className="leading-wide max-w-[1040px] font-AvenirRoman text-[20px] text-white/60 xl:text-[24px] xl:leading-10">
+          <p className="leading-wide max-w-[1040px] font-AvenirRoman text-[16px] text-white/60 lg:text-[20px] xl:text-[24px] xl:leading-10">
             <span className="font-AvenirMedium text-white">
               Winner of 2021 IOT EXO
             </span>
@@ -36,13 +38,15 @@ const Experience = () => {
             using Python, OvenCV2, <br /> TensorFlow, HoughLinesP Algorithm.
           </p>
         </div>
-        <div className="mt-[30px] flex items-center gap-4">
+        <div className="mt-8 flex items-center gap-4 lg:mt-[30px]">
           <Link
             className="flex items-center gap-2 rounded-full bg-white py-[10px] px-[30px] text-black transition-all duration-200 ease-in hover:scale-105"
             to="https://github.com/ojasggg/2021_IOT_Expo_Projects.git"
             target="_blank"
           >
-            <p className="font-AvenirMedium text-[16px] uppercase">Github</p>
+            <p className="font-AvenirMedium text-[14px] uppercase lg:text-[16px]">
+              Github
+            </p>
             <BsArrowUpRight size={16} />
           </Link>
           <Link
@@ -50,7 +54,7 @@ const Experience = () => {
             to="https://github.com/ojasggg/2021_IOT_Expo_Projects"
             target="_blank"
           >
-            <p className="font-AvenirMedium text-[16px] uppercase">
+            <p className="font-AvenirMedium text-[14px] uppercase lg:text-[16px]">
               Project Link
             </p>
             <BsArrowUpRight size={16} />

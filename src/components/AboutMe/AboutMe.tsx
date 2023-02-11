@@ -4,13 +4,13 @@ import { Link } from "react-router-dom";
 
 const AboutMe = () => {
   return (
-    <section className="relative m-auto h-[100vh] lg:w-[1200px] xl:w-[1600px]">
-      <h1 className="absolute top-10 left-0 z-[-10] p-0 font-AvenirHeavy text-[200px] leading-none text-white/10 lg:text-white/20">
+    <section className="relative m-auto h-fit max-md:w-[90vw] lg:h-[100vh] lg:w-[1200px] xl:w-[1600px]">
+      <h1 className=" absolute top-10 left-0 z-[-10] p-0 font-AvenirHeavy text-[80px] leading-none text-white/20 md:text-[140px] lg:text-[200px] lg:text-white/20">
         ABOUT ME
       </h1>
       {/* TODO: Highlight some key points from the paragraph if needed */}
-      <div className="z-[2] mr-[57px] ml-[263px] pt-[140px] xl:pt-[160px]">
-        <h3 className="w-[95%] bg-gradient-to-r from-white/80 to-white bg-clip-text font-AvenirMedium text-[22px] text-transparent xl:text-[26px]">
+      <div className="z-[2] mr-0 ml-[60px] pt-[150px] md:pt-[120px] lg:mr-[57px] lg:ml-[263px] lg:pt-[140px] xl:pt-[160px]">
+        <h3 className="w-[95%] bg-gradient-to-r from-white/80 to-white bg-clip-text font-AvenirMedium text-[16px] text-transparent sm:text-[18px] md:text-[20px] lg:text-[22px] xl:text-[26px]">
           Love to play with design and convert them into{" "}
           <span className="text-white">
             functionable websites, aiming always to keep it responsive and
@@ -28,7 +28,7 @@ const AboutMe = () => {
       </div>
       <div className="mt-10 flex items-center justify-center">
         <Link
-          className="flex w-fit items-center gap-2 rounded-xl border border-white/60 p-3 px-4 text-[20px] text-white/60 transition-all duration-200 ease-in hover:scale-105"
+          className="flex w-fit items-center gap-2 rounded-xl border border-white/60 p-3 px-4 text-[20px] text-white/60 transition-all duration-200 ease-in hover:scale-105 max-md:p-2 max-md:text-[16px]"
           to="/about"
         >
           <p>About me</p>

@@ -53,15 +53,15 @@ const skillLists: Skill[] = [
 
 const Skills = () => {
   return (
-    <section className="relative mx-auto flex h-[100vh] flex-col justify-center gap-16 lg:w-[1000px] xl:w-[1200px]">
-      <h1 className="absolute z-[-10] p-0 font-AvenirHeavy text-[200px] uppercase leading-none lg:top-[36vh] lg:left-[30vh] lg:text-white/20 xl:top-[40vh] xl:left-[30vh] xl:text-white/10">
+    <section className="relative mx-auto  flex h-fit flex-col justify-center gap-16 overflow-hidden lg:h-[100vh] lg:w-[1000px] xl:w-[1200px]">
+      <h1 className="left-[30vh] z-[-10] p-0 text-center font-AvenirHeavy text-[100px] uppercase leading-none text-white/10 sm:absolute lg:top-[36vh] lg:left-[30vh] lg:text-[200px] lg:text-white/20 xl:top-[40vh] xl:left-[30vh] xl:text-white/10">
         skills
       </h1>
       {/* Top */}
-      <div className="z-[2] flex justify-between xl:gap-[80px]">
+      <div className="z-[2] m-auto flex w-[90%] flex-col justify-between lg:m-0 lg:w-full lg:flex-row xl:gap-[80px]">
         {skillLists.map((skill, index) => (
-          <div key={index}>
-            <h4 className="font-AvenirHeavy text-[16px] uppercase text-white xl:text-[18px]">
+          <div key={index} className="mt-10 first:mt-0 lg:m-0">
+            <h4 className="mb-4 font-AvenirHeavy text-[16px] uppercase text-white xl:text-[18px]">
               {skill.skillName}
             </h4>
             <ul
@@ -69,7 +69,7 @@ const Skills = () => {
                 skill.skillSets.length > 7
                   ? "grid grid-cols-2 grid-rows-4"
                   : "flex flex-col"
-              } mt-4 gap-2 gap-x-10`}
+              } gap-2 lg:mt-4 lg:gap-2 lg:gap-x-10`}
             >
               {skill.skillSets?.map((perSkill, index) => (
                 <li
@@ -84,9 +84,9 @@ const Skills = () => {
         ))}
       </div>
       {/* Buttom */}
-      <div className="z-[2] flex gap-[160px]">
-        <div>
-          <h4 className="font-AvenirHeavy text-[18px] uppercase text-white">
+      <div className="z-[2] mx-auto flex w-[90%] flex-col lg:m-0 lg:w-full lg:flex-row lg:gap-[160px]">
+        <div className="">
+          <h4 className="font-AvenirHeavy text-[16px] uppercase text-white">
             special
           </h4>
           <ul className="mt-4 flex flex-col gap-2">
@@ -94,25 +94,33 @@ const Skills = () => {
               <li className="list-inside list-disc items-center font-AvenirMedium text-[16px] text-white/60 xl:text-[18px]">
                 Googling
               </li>
-              <img src={gif1} alt="Smile Emoji GIF" width={30} />
+              <img
+                src={gif1}
+                alt="Smile Emoji GIF"
+                className="w-[26px] lg:w-[30px]"
+              />
             </div>
-            <li className="list-inside list-disc font-AvenirMedium text-[18px] text-white/60">
+            <li className="list-inside list-disc font-AvenirMedium text-[16px] text-white/60">
               ChatGPT-ing
             </li>
-            <li className="list-inside list-disc font-AvenirMedium text-[18px] text-white/60">
+            <li className="list-inside list-disc font-AvenirMedium text-[16px] text-white/60">
               Stack-OverFlow
             </li>
           </ul>
         </div>
-        <div>
-          <p className="font-AvenirMedium text-[18px] text-white/60">
+        <div className="my-10 lg:my-0">
+          <p className="font-AvenirMedium text-[16px] text-white/60 lg:text-[18px]">
             Developers need {""}
             <span className="text-white">
               to learn and be updated with latest technologies everyday
             </span>
             , so <br /> this list got really long{" "}
             <span className="inline-block">
-              <img src={gif2} alt="Tense Emoji Gif" width={30} />
+              <img
+                src={gif2}
+                alt="Tense Emoji Gif"
+                className="w-[26px] lg:w-[30px] "
+              />
             </span>
             .
           </p>
