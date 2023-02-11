@@ -7,36 +7,36 @@ import UI from "../assets/Images/UI.jpg";
 const About = () => {
   return (
     <>
-      <main className="m-auto mb-40 mt-20 flex h-fit flex-col lg:w-[1100px] xl:w-[1500px]">
+      <main className="m-auto mb-40 mt-16 flex h-fit flex-col lg:mt-20 lg:w-[1100px] xl:w-[1500px]">
         <section className="relative h-fit">
           <div className="absolute top-3 left-0 z-[1] ">
-            <h1 className="p-0 font-Valencia text-[200px] leading-none text-white xl:text-[240px]">
+            <h1 className="p-0 font-Valencia text-[160px] leading-none text-white lg:text-[200px] xl:text-[240px]">
               Ojash
             </h1>
-            <h1 className="absolute top-32 left-28 p-0 font-Valencia text-[200px] leading-none text-white xl:top-36 xl:text-[240px]">
+            <h1 className="absolute top-28 left-20 p-0 font-Valencia text-[160px] leading-none text-white lg:top-32 lg:left-28 lg:text-[200px] xl:top-36 xl:text-[240px]">
               Gurung
             </h1>
           </div>
-          <div className="mt-[100px] flex items-center justify-center">
-            <div className="relative lg:h-[600px] lg:w-[500px] xl:h-[800px] xl:w-[600px]">
+          <div className="mt-[200px] flex items-center justify-center lg:mt-[100px]">
+            <div className="relative h-[400px] lg:h-[600px] lg:w-[500px] xl:h-[800px] xl:w-[600px]">
               <img
-                className=" object-cover lg:h-[600px] lg:w-[500px] xl:h-[800px] xl:w-[600px]"
+                className=" h-[400px] object-cover lg:h-[600px] lg:w-[500px] xl:h-[800px] xl:w-[600px]"
                 src={Profile}
               />
-              <div className="absolute top-6 left-6 z-[-1] border border-white/60 lg:h-[600px] lg:w-[500px] xl:h-[800px] xl:w-[600px]"></div>
+              <div className="absolute top-6 left-6 z-[-1] h-[400px] w-[260px] border border-white/60 lg:h-[600px] lg:w-[500px] xl:h-[800px] xl:w-[600px]"></div>
             </div>
           </div>
         </section>
         <section className="mt-40">
-          <div className="flex h-fit flex-col gap-0 font-Valencia text-[200px] leading-none tracking-wide">
+          <div className="flex h-fit flex-col gap-0 font-Valencia text-[100px] leading-none tracking-wide lg:text-[200px]">
             <p className="p-0 leading-none">Web Designer</p>
-            <div className="m-0 flex w-full justify-end">
+            <div className="m-0 flex w-full justify-end pr-6 lg:pr-0">
               <p className="p-0 leading-none">Full -Stack</p>
             </div>
             <p className="p-0 leading-none">Developer</p>
           </div>
           <div className="mt-20 flex gap-10">
-            <div className="flex flex-col items-center gap-2 py-6">
+            <div className="hidden flex-col items-center gap-2 py-6 lg:flex">
               <div className="flex h-20 w-20 items-center justify-center rounded-full bg-white p-10 font-AvenirHeavy text-black">
                 2000
               </div>
@@ -45,8 +45,8 @@ const About = () => {
                 2023
               </div>
             </div>
-            <div className="flex flex-col gap-20">
-              <div className="flex w-[95%] gap-4 ">
+            <div className="flex flex-col gap-14 lg:gap-20">
+              <div className="m-auto flex w-[90%] flex-col gap-4 lg:m-0 lg:w-[95%] lg:flex-row ">
                 <div className="flex flex-col gap-2">
                   <h3 className="font-AvenirRoman text-[20px] text-white/60  xl:text-[24px]">
                     Hi, I was born in 2000 in Kathmandu, Nepal. Ever since my
@@ -60,12 +60,16 @@ const About = () => {
                     dev-sec-ops(devops), QA, SEO, UI/UX.
                   </h3>
                 </div>
-                <img src={Nepal} alt="NepalTemple" className="w-[40%]" />
+                <img src={Nepal} alt="NepalTemple" className="lg:w-[40%]" />
               </div>
-              <div className="flex gap-4">
-                <img src={UI} alt="NepalTemple" className="w-[40%]" />
+              <div className="m-auto flex w-[90%] flex-col gap-4 lg:m-0 lg:w-[95%] lg:flex-row">
+                <img
+                  src={UI}
+                  alt="NepalTemple"
+                  className="order-last lg:order-first lg:w-[40%]"
+                />
 
-                <h3 className="font-AvenirRoman text-[20px] text-white/60 xl:text-[24px]">
+                <h3 className="font-AvenirRoman text-[20px] text-white/60 xl:text-[24px] ">
                   But I Love to play with design and convert them into
                   functionable websites, aiming always to keep it responsive and
                   adaptive, optimized, performant and accessible. But I felt
