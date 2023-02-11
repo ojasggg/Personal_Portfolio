@@ -80,7 +80,7 @@ const Navbar = () => {
         </div>
       </nav>
       <div
-        className={`absolute ${
+        className={`absolute z-[999] ${
           toggleMenu ? "right-0" : "-right-full"
         } h-screen w-[100vw] bg-black transition-all delay-100 duration-300 ease-in-out md:hidden`}
       >
@@ -97,7 +97,9 @@ const Navbar = () => {
                     : ""
                 } p-4 text-center font-AvenirRoman text-[20px] uppercase`}
               >
-                <Link to={navItem.link}>{navItem.itemName}</Link>
+                <Link to={navItem.link} onClick={() => setToggleMenu(false)}>
+                  {navItem.itemName}
+                </Link>
               </li>
             ))}
           </ul>

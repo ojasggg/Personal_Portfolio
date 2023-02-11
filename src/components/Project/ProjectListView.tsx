@@ -74,7 +74,7 @@ const ProjectListView = ({ listView, projects }: propsType) => {
         <div
           className={`${
             projects.length - 1 === index ? "border-b" : ""
-          } relative z-[2] flex cursor-pointer items-center justify-between border-t border-white/30 py-10 transition-all delay-100 duration-300 ease-in-out lg:py-14 lg:px-14 lg:hover:px-10 xl:py-16 `}
+          } relative z-[2] flex cursor-pointer items-center justify-between border-t border-white/30 py-10 px-2 transition-all delay-100 duration-300 ease-in-out lg:py-14 lg:px-14 lg:hover:px-10 xl:py-16 `}
           key={index}
           onMouseEnter={() => handleShowImage(project)}
           onMouseLeave={() => setShowImage(false)}
