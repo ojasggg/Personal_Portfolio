@@ -67,25 +67,25 @@ const ProjectListView = ({ listView, projects }: propsType) => {
   return (
     <div
       className={`${
-        listView ? "visible" : "hidden"
-      } project-inner relative mx-auto max-md:hidden lg:w-[1100px] xl:w-[1500px] `}
+        listView ? "" : "hidden"
+      } project-inner relative mx-auto lg:w-[1100px] xl:w-[1500px] `}
     >
       {projects.map((project, index) => (
         <div
           className={`${
             projects.length - 1 === index ? "border-b" : ""
-          } relative z-[2] flex cursor-pointer items-center justify-between border-t border-white/30 py-14 px-14 transition-all delay-100 duration-300 ease-in-out hover:px-10 xl:py-16`}
+          } relative z-[2] flex cursor-pointer items-center justify-between border-t border-white/30 py-10 transition-all delay-100 duration-300 ease-in-out lg:py-14 lg:px-14 lg:hover:px-10 xl:py-16 `}
           key={index}
           onMouseEnter={() => handleShowImage(project)}
           onMouseLeave={() => setShowImage(false)}
         >
-          <h1 className="p-0 font-AvenirHeavy text-[80px] leading-none text-white/60 xl:text-[70px]">
+          <h1 className="p-0 font-AvenirHeavy text-[26px] leading-none text-white/60 lg:text-[80px] xl:text-[70px]">
             {project.projectName}
           </h1>
-          <p className="z-[2] font-AvenirRoman text-[24px] text-white/60 xl:text-[24px]">
+          <p className="z-[2] font-AvenirRoman text-[16px] text-white/60 lg:text-[24px] xl:text-[24px]">
             {project.projectType}
           </p>
-          <div className="text-full absolute top-[10px] right-0 z-[1] p-0 font-AvenirHeavy text-[180px] leading-none text-white/20 xl:top-0 xl:text-[200px] xl:text-white/10">
+          <div className="text-full absolute top-[10px] right-0 z-[1] p-0 font-AvenirHeavy text-[100px] leading-none text-white/10 lg:text-[180px] lg:text-white/20 xl:top-0 xl:text-[200px] xl:text-white/10">
             0{index + 1}
           </div>
         </div>

@@ -4,7 +4,7 @@ const ContactForm = () => {
   const [state, handleSubmit] = useForm(import.meta.env.VITE_FORMSPREE_ID);
   if (state.submitting) {
     return (
-      <div className="flex w-[50%] items-center justify-center">
+      <div className="order-first flex w-[50%] items-center justify-center lg:order-last">
         <svg
           aria-hidden="true"
           className="mr-2 h-8 w-8 animate-spin fill-black text-gray-200 dark:text-gray-600"
@@ -27,7 +27,7 @@ const ContactForm = () => {
   }
   if (state.succeeded) {
     return (
-      <div className="w-[50%]">
+      <div className="order-first  w-[50%]">
         <p className="p-0 font-AvenirHeavy text-[36px] leading-tight text-black  xl:text-[50px]">
           Thank you for your message, will contact you soon!
         </p>
@@ -35,7 +35,7 @@ const ContactForm = () => {
     );
   }
   return (
-    <div className="w-[50%]">
+    <div className="order-first m-auto my-14 w-[90%] lg:m-0 lg:my-0 lg:w-[50%]">
       <h1 className="p-0 font-AvenirHeavy text-[36px] leading-none text-black lg:w-[400px] xl:w-[528px] xl:text-[50px]">
         Would love to hear from you.
       </h1>
@@ -45,14 +45,14 @@ const ContactForm = () => {
             type="text"
             placeholder="Name *"
             name="Name"
-            className="w-[50%] border-b border-black/40 bg-transparent pb-[16px] font-AvenirRoman text-[18px] text-black placeholder:text-black/40 xl:pb-[22px]"
+            className="w-[50%] border-b border-black/40 bg-transparent pb-[16px] font-AvenirRoman text-[16px] text-black placeholder:text-black/40 lg:text-[18px] xl:pb-[22px]"
           />
           <ValidationError prefix="Name" field="name" errors={state.errors} />
           <input
             type="email"
             placeholder="Email *"
             name="Email"
-            className="w-[50%] border-b border-black/40 bg-transparent pb-[16px] font-AvenirRoman text-[18px] text-black placeholder:text-black/40 xl:pb-[22px]"
+            className="w-[50%] border-b border-black/40 bg-transparent pb-[16px] font-AvenirRoman text-[16px]  text-black placeholder:text-black/40 lg:text-[18px] xl:pb-[22px]"
           />
           <ValidationError prefix="Email" field="email" errors={state.errors} />
         </div>
@@ -60,7 +60,7 @@ const ContactForm = () => {
           type="text"
           placeholder="Subject *"
           name="Subject"
-          className="mt-[26px] w-full border-b border-black/40 bg-transparent pb-[16px] font-AvenirRoman text-[18px] text-black placeholder:text-black/40 xl:mt-[46px] xl:pb-[22px]"
+          className="mt-[26px] w-full border-b border-black/40 bg-transparent pb-[16px] font-AvenirRoman text-[16px] text-black placeholder:text-black/40 lg:text-[18px] xl:mt-[46px] xl:pb-[22px]"
         />
         <ValidationError
           prefix="Subject"
@@ -71,7 +71,7 @@ const ContactForm = () => {
           type="text"
           placeholder="Message *"
           name="Message"
-          className="mt-[26px] w-full border-b border-black/40 bg-transparent font-AvenirRoman text-[18px] text-black placeholder:text-black/40 lg:pb-[100px] xl:mt-[46px] xl:pb-[190px]"
+          className="mt-[26px] w-full border-b border-black/40 bg-transparent pb-[60px] font-AvenirRoman text-[16px] text-black placeholder:text-black/40 lg:pb-[100px] lg:text-[18px] xl:mt-[46px] xl:pb-[190px]"
         />
         <ValidationError
           prefix="Message"
@@ -79,7 +79,7 @@ const ContactForm = () => {
           errors={state.errors}
         />
         <button
-          className="flex items-center  gap-[24px] text-black lg:mt-[20px] xl:mt-[50px]"
+          className="mt-[16px] flex items-center gap-[24px] text-black lg:mt-[20px] xl:mt-[50px]"
           type="submit"
           disabled={state.submitting}
         >

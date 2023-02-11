@@ -29,7 +29,7 @@ const ProjectGridView = ({ listView, projects }: propsType) => {
     setMouseIn(false);
   };
   return (
-    <div className={`${listView ? "visible" : "visible"} w-full`}>
+    <div className={`${listView ? "hidden" : "visible"} w-full`}>
       <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {/* Project Card */}
         {projects.map((project, index) => (
@@ -58,11 +58,11 @@ const ProjectGridView = ({ listView, projects }: propsType) => {
                   mouseIn && hoveredIndex === index
                     ? "animation-[visible-animate]"
                     : "opacity-0"
-                } absolute flex h-20 w-20  items-center justify-center rounded-full bg-blue-600 font-AvenirRoman text-[18px]  transition-all delay-200 duration-200 ease-in-out`}
+                } absolute hidden h-20 w-20 items-center justify-center rounded-full bg-blue-600 font-AvenirRoman text-[18px]  transition-all delay-200 duration-200 ease-in-out lg:flex`}
               >
                 View
               </div>
-              <div className="absolute h-full w-full bg-gray-500 opacity-[0.5] transition-all delay-200 duration-200 ease-in hover:opacity-0"></div>
+              <div className="absolute hidden h-full w-full bg-gray-500 opacity-[0.5] transition-all delay-200 duration-200 ease-in hover:opacity-0 lg:flex"></div>
             </div>
           </div>
         ))}

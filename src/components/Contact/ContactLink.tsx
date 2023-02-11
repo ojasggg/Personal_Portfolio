@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const ContactLink = () => {
   return (
-    <div className="flex w-[50%] flex-col justify-end gap-12 xl:gap-16">
+    <div className="order-last m-auto flex w-[90%] flex-col justify-end gap-6 lg:order-first lg:m-0 lg:w-[50%] lg:gap-12 xl:gap-16">
       {/* Quick Links */}
       <div>
         <h1 className="mb-2 p-0 font-AvenirRoman text-[12px] uppercase  leading-none text-black xl:text-[14px]">
