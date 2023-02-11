@@ -37,7 +37,7 @@ const App = () => {
   // TODO: Mobile Responsive left
   // TODO: Animation Left
   return (
-    <div className="m-auto w-fit overflow-hidden">
+    <div className="relative m-auto w-screen overflow-x-hidden">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
