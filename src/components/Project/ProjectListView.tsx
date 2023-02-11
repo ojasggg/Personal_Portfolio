@@ -68,7 +68,7 @@ const ProjectListView = ({ listView, projects }: propsType) => {
     <div
       className={`${
         listView ? "" : "hidden"
-      } project-inner relative mx-auto lg:w-[1100px] xl:w-[1500px] `}
+      } project-inner relative mx-auto lg:w-[1100px] xl:w-[1500px]`}
     >
       {projects.map((project, index) => (
         <div
@@ -93,7 +93,7 @@ const ProjectListView = ({ listView, projects }: propsType) => {
       <div
         className={`absolute ${
           showImage ? "visible" : "hidden"
-        } top-[-24px] left-[-24px] z-[10] h-[400px] w-[500px] rounded-lg xl:h-[500px] xl:w-[600px]`}
+        } top-[-24px] left-[-24px] z-[10] h-[400px] w-[500px] rounded-lg xl:h-[500px] xl:w-[600px] `}
         style={{
           // top: divPosition.top,
           // left: divPosition.left,

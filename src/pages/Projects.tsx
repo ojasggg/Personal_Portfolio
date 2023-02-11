@@ -11,7 +11,7 @@ const Projects = () => {
     useState<boolean>(true);
   return (
     <>
-      <main className="mt-20 h-fit overflow-hidden xl:mt-40">
+      <main className="my-20 h-fit overflow-hidden xl:mt-40">
         <section>
           <h1 className="top-10 left-0 z-[-10] m-auto mx-auto mb-10 w-[90%] p-0 font-AvenirHeavy text-[60px] uppercase leading-none text-white lg:w-[1100px] lg:text-[100px] xl:w-[1500px] ">
             Latest <br />
