@@ -7,11 +7,15 @@ import {
   ExperienceAndEducation,
   Skills,
   Contact,
+  Navbar,
+  Transition,
 } from "../components";
 
 const Home = () => {
   return (
     <>
+      <Transition />
+      <Navbar />
       <div className="h-[100vh]">
         <Hero />
       </div>

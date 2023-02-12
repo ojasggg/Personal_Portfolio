@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Contact, Project } from "../components";
+import { Contact, Navbar, Transition } from "../components";
 import ProjectGridView from "../components/Project/ProjectGridView";
 import ProjectListView from "../components/Project/ProjectListView";
 import ProjectViewButton from "../components/Project/ProjectViewButton";
@@ -11,6 +11,8 @@ const Projects = () => {
     useState<boolean>(true);
   return (
     <>
+      <Transition />
+      <Navbar />
       <main className="my-20 h-fit overflow-hidden xl:mt-40">
         <section>
           <h1 className="top-10 left-0 z-[-10] m-auto mx-auto mb-10 w-[90%] p-0 font-AvenirHeavy text-[60px] uppercase leading-none text-white lg:w-[1100px] lg:text-[100px] xl:w-[1500px] ">

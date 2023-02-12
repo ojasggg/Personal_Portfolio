@@ -1,4 +1,4 @@
-import { Contact } from "../components";
+import { Contact, Navbar, Transition } from "../components";
 
 const siteCredits = [
   "React",
@@ -18,6 +18,8 @@ const siteCredits = [
 const SiteCredit = () => {
   return (
     <>
+      <Transition />
+      <Navbar />
       <main className="m-auto mb-20 mt-20 flex h-fit flex-col lg:w-[1100px] xl:w-[1500px]">
         <section className="mt-10 flex flex-col items-center">
           <p className="max-w-[700px] text-center font-AvenirHeavy text-[40px] text-white/40">

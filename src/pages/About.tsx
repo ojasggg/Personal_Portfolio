@@ -1,12 +1,14 @@
 import React from "react";
 import Profile from "../assets/Images/Picture.jpg";
-import { Contact } from "../components";
+import { Contact, Navbar, Transition } from "../components";
 import Nepal from "../assets/Images/Nepal.jpg";
 import UI from "../assets/Images/UI.jpg";
 
 const About = () => {
   return (
     <>
+      <Transition />
+      <Navbar />
       <main className="m-auto mb-40 mt-16 flex h-fit flex-col lg:mt-20 lg:w-[1100px] xl:w-[1500px]">
         <section className="relative h-fit">
           <div className="absolute top-3 left-0 z-[1] ">

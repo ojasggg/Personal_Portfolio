@@ -23,7 +23,7 @@ const Navbar = () => {
     <div className="w-screen overflow-hidden">
       <nav className="mx-auto mt-4 flex w-[90%] items-center justify-between py-6 lg:w-[1200px] lg:pb-4 xl:w-[1600px]">
         {/* Ojash Gurung Logo */}
-        <Link className="relative" to={"home"}>
+        <Link className="relative" to={"/home"}>
           {/* TODO: Logo Animation 
         1) Complete ->  Rotate Individual letters
         */}

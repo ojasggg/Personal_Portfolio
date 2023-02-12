@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 import { Link, Route, Routes, useLocation } from "react-router-dom";
-import { Navbar } from "./components";
+import { Navbar, Transition } from "./components";
 import { About, Error, Home, Projects, SiteCredit } from "./pages";
 
 type socialItems = {
@@ -42,8 +42,7 @@ const App = () => {
   }, [pathname]);
   // TODO: Animation Left
   return (
-    <div className="relative m-auto w-screen overflow-x-hidden">
-      <Navbar />
+    <div className="relative mx-auto w-screen overflow-x-hidden">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
@@ -53,7 +52,7 @@ const App = () => {
         <Route path="*" element={<Error />} />
       </Routes>
       {/* Socials Fixed */}
-      <div className="fixed bottom-0 z-[999] hidden md:right-[70px] lg:right-[70px] lg:flex xl:right-[100px]">
+      <div className="fixed bottom-0 z-[100] hidden md:right-[70px] lg:right-[70px] lg:flex xl:right-[100px]">
         <div className="flex flex-col items-center gap-8">
           <ul className="flex flex-col items-center gap-[30px] text-white/60">
             {socialItems.map((socialItem, index) => (
