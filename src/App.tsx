@@ -3,6 +3,7 @@ import { BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 import { Link, Route, Routes, useLocation } from "react-router-dom";
 import { Navbar, Transition } from "./components";
+import CustomCursor from "./components/CustomCursor/CustomCursor";
 import { About, Error, Home, Projects, SiteCredit } from "./pages";
 
 type socialItems = {
@@ -43,6 +44,7 @@ const App = () => {
   // TODO: Animation Left
   return (
     <div className="relative mx-auto w-screen overflow-x-hidden">
+      <CustomCursor />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
