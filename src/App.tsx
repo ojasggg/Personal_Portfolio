@@ -1,6 +1,7 @@
+import { useEffect } from "react";
 import { BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
-import { Link, Route, Routes } from "react-router-dom";
+import { Link, Route, Routes, useLocation } from "react-router-dom";
 import { Navbar } from "./components";
 import { About, Error, Home, Projects, SiteCredit } from "./pages";
 
@@ -34,7 +35,11 @@ const socialItems: socialItems = [
 ];
 
 const App = () => {
-  // TODO: Mobile Responsive left
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, [pathname]);
   // TODO: Animation Left
   return (
     <div className="relative m-auto w-screen overflow-x-hidden">

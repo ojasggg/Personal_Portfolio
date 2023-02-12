@@ -5,7 +5,7 @@ const Error = () => {
   return (
     <>
       <main className="flex h-[90vh] flex-col items-center justify-center gap-4">
-        <h1 className="p-0 font-AvenirMedium text-[160px] leading-none lg:text-[200px] xl:text-[300px]">
+        <h1 className="p-0 font-AvenirMedium text-[160px] leading-none lg:text-[200px] xl:text-[260px]">
           404
         </h1>
         <p className="font-AvenirMedium text-white/60 lg:text-[24px] xl:text-[36px]">

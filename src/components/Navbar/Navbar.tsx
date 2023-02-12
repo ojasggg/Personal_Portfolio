@@ -23,10 +23,9 @@ const Navbar = () => {
     <div className="w-screen overflow-hidden">
       <nav className="mx-auto mt-4 flex w-[90%] items-center justify-between py-6 lg:w-[1200px] lg:pb-4 xl:w-[1600px]">
         {/* Ojash Gurung Logo */}
-        <div className="relative">
+        <Link className="relative" to={"home"}>
           {/* TODO: Logo Animation 
-        1) Rotate Individual letters
-        2) Add Name along side the logo 
+        1) Complete ->  Rotate Individual letters
         */}
           <svg
             width="29"
@@ -56,7 +55,7 @@ const Navbar = () => {
               fill="white"
             />
           </svg>
-        </div>
+        </Link>
         {/* Nav Items for Larger Screen*/}
         <ul className="flex items-center justify-center gap-[40px] max-lg:hidden">
           {navItems.map((navItem, index) => (
