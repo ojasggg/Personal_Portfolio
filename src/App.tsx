@@ -3,7 +3,7 @@ import { BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 import { Link, Route, Routes, useLocation } from "react-router-dom";
 import CustomCursor from "./components/CustomCursor/CustomCursor";
-import { About, Error, Home, Projects, SiteCredit } from "./pages";
+import { About, Error, Home, ProjectPage, Projects, SiteCredit } from "./pages";
 
 // Import aos
 import Aos from "aos";
@@ -63,6 +63,7 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/site-credits" element={<SiteCredit />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/projects/:slug" element={<ProjectPage />} />
         <Route path="*" element={<Error />} />
       </Routes>
       {/* Socials Fixed */}

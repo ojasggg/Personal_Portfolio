@@ -1,12 +1,18 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { lerp } from "../../utils/utils.js";
 
 type projects = {
+  projectId: string;
   projectName: string;
   projectType: string;
+  projectFor: string;
   projectDesc: string;
+  projectMyRole: string;
   projectCover: string;
-  projectLink: string | null;
+  projectLiveLink: string | null;
+  projectGithubLink: string | null;
+  projectTechnicalSheets: string[];
   projectBgColor: string;
 };
 
@@ -71,13 +77,14 @@ const ProjectListView = ({ listView, projects }: propsType) => {
       } project-inner relative mx-auto lg:w-[1100px] xl:w-[1500px]`}
     >
       {projects.map((project, index) => (
-        <div
+        <Link
           className={`${
             projects.length - 1 === index ? "border-b" : ""
           } relative z-[2] flex cursor-pointer items-center justify-between border-t border-white/30 py-10 px-2 transition-all delay-100 duration-300 ease-in-out lg:py-14 lg:px-14 lg:hover:px-10 xl:py-16 `}
           key={index}
           onMouseEnter={() => handleShowImage(project)}
           onMouseLeave={() => setShowImage(false)}
+          to={`/projects/${project.projectId}`}
         >
           <h1
             className="p-0 font-AvenirHeavy text-[26px] leading-none text-white/60 lg:text-[80px] xl:text-[70px]"
@@ -106,7 +113,7 @@ const ProjectListView = ({ listView, projects }: propsType) => {
           >
             0{index + 1}
           </div>
-        </div>
+        </Link>
       ))}
       <div
         className={`absolute ${
