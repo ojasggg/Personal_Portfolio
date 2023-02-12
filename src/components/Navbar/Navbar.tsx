@@ -20,8 +20,8 @@ const navItems: navItems[] = [
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   return (
-    <div className="w-screen overflow-hidden">
-      <nav className="mx-auto mt-4 flex w-[90%] items-center justify-between py-6 lg:w-[1200px] lg:pb-4 xl:w-[1600px]">
+    <section className="w-screen overflow-hidden" data-scroll-section>
+      <nav className="mx-auto flex w-[90%] items-center justify-between py-6 lg:w-[1200px] lg:pb-4 xl:w-[1600px]">
         {/* Ojash Gurung Logo */}
         <Link className="relative" to={"/home"}>
           {/* TODO: Logo Animation 
@@ -112,7 +112,7 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

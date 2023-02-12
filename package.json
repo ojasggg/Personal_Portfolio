@@ -10,10 +10,12 @@
   },
   "dependencies": {
     "@formspree/react": "^2.4.1",
+    "aos": "^2.3.4",
     "gsap": "^3.11.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
+    "react-locomotive-scroll": "^0.2.2",
     "react-router-dom": "^6.8.0"
   },
   "devDependencies": {

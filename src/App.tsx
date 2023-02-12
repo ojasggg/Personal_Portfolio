@@ -2,9 +2,12 @@ import { useEffect } from "react";
 import { BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 import { Link, Route, Routes, useLocation } from "react-router-dom";
-import { Navbar, Transition } from "./components";
 import CustomCursor from "./components/CustomCursor/CustomCursor";
 import { About, Error, Home, Projects, SiteCredit } from "./pages";
+
+// Import aos
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 type socialItems = {
   iconName: string;
@@ -42,6 +45,15 @@ const App = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, [pathname]);
   // TODO: Animation Left
+
+  // aos init
+  useEffect(() => {
+    Aos.init({
+      duration: 600,
+      delay: 200,
+    });
+  });
+
   return (
     <div className="relative mx-auto w-screen overflow-x-hidden">
       <CustomCursor />

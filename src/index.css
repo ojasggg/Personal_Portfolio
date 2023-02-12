@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply m-0 box-border min-w-fit overflow-x-hidden bg-black p-0 text-white;
+    @apply m-0 box-border min-w-fit cursor-none overflow-x-hidden bg-black p-0 text-white;
   }
 
   input {
@@ -13,6 +13,10 @@
 
   .blockBox {
     @apply fixed z-[999] h-[100vh] w-[5%] bg-[#D3D2D0];
+  }
+
+  .blockBoxSmall {
+    @apply fixed z-[999] h-[100vh] w-[10%] bg-[#D3D2D0];
   }
 }
 

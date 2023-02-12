@@ -44,12 +44,22 @@ const Projects = () => {
           </div>
         </section>
         <section className="my-36">
-          <h1 className="top-10 left-0 z-[-10] m-auto mx-auto mb-10 w-[90%] p-0 font-AvenirHeavy text-[60px] uppercase leading-none text-white lg:w-[1100px] lg:text-[100px] xl:w-[1500px] ">
+          <h1
+            className="top-10 left-0 z-[-10] m-auto mx-auto mb-10 w-[90%] p-0 font-AvenirHeavy text-[60px] uppercase leading-none text-white lg:w-[1100px] lg:text-[100px] xl:w-[1500px] "
+            data-aos="fade-left"
+            data-aos-delay="200"
+            data-aos-duration="1200"
+          >
             Ongoing <br />
             projects
           </h1>
           <div className="mb-10">
-            <p className="text-center font-AvenirMedium text-sm text-white/60">
+            <p
+              className="text-center font-AvenirMedium text-sm text-white/60"
+              data-aos="fade-up"
+              data-aos-delay="300"
+              data-aos-duration="1200"
+            >
               Note: Projects listed here are mainly freelance/personal projects
               Viewing All projects
             </p>

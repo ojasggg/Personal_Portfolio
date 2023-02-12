@@ -79,13 +79,31 @@ const ProjectListView = ({ listView, projects }: propsType) => {
           onMouseEnter={() => handleShowImage(project)}
           onMouseLeave={() => setShowImage(false)}
         >
-          <h1 className="p-0 font-AvenirHeavy text-[26px] leading-none text-white/60 lg:text-[80px] xl:text-[70px]">
+          <h1
+            className="p-0 font-AvenirHeavy text-[26px] leading-none text-white/60 lg:text-[80px] xl:text-[70px]"
+            data-aos="fade-right"
+            data-aos-offset="0"
+            data-aos-delay={`${200 + index * 100}`}
+            data-aos-duration="600"
+          >
             {project.projectName}
           </h1>
-          <p className="z-[2] font-AvenirRoman text-[16px] text-white/60 lg:text-[24px] xl:text-[24px]">
+          <p
+            className="z-[2] font-AvenirRoman text-[16px] text-white/60 lg:text-[24px] xl:text-[24px]"
+            data-aos="fade-left"
+            data-aos-offset="0"
+            data-aos-delay={`${200 + index * 100}`}
+            data-aos-duration="600"
+          >
             {project.projectType}
           </p>
-          <div className="text-full absolute top-[10px] right-0 z-[1] p-0 font-AvenirHeavy text-[100px] leading-none text-white/10 lg:text-[180px] lg:text-white/20 xl:top-0 xl:text-[200px] xl:text-white/10">
+          <div
+            className="text-full absolute top-[10px] right-0 z-[1] p-0 font-AvenirHeavy text-[100px] leading-none text-white/10 lg:text-[180px] lg:text-white/20 xl:top-0 xl:text-[200px] xl:text-white/10"
+            data-aos="fade-down"
+            data-aos-offset="0"
+            data-aos-delay={`${300 + index * 100}`}
+            data-aos-duration="800"
+          >
             0{index + 1}
           </div>
         </div>

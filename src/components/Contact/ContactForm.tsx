@@ -36,10 +36,21 @@ const ContactForm = () => {
   }
   return (
     <div className="order-first m-auto my-14 w-[90%] lg:m-0 lg:my-0 lg:h-fit lg:w-[50%]">
-      <h1 className="p-0 font-AvenirHeavy text-[36px] leading-none text-black lg:w-[400px] xl:w-[528px] xl:text-[50px]">
+      <h1
+        className="p-0 font-AvenirHeavy text-[36px] leading-none text-black lg:w-[400px] xl:w-[528px] xl:text-[50px]"
+        data-aos="fade-down"
+        data-aos-delay="200"
+        data-aos-duration="800"
+      >
         Would love to hear from you.
       </h1>
-      <form className="mt-10 xl:mt-10 xl:w-full" onSubmit={handleSubmit}>
+      <form
+        className="mt-10 xl:mt-10 xl:w-full"
+        onSubmit={handleSubmit}
+        data-aos="fade-left"
+        data-aos-delay="200"
+        data-aos-duration="600"
+      >
         <div className="flex gap-4">
           <input
             type="text"

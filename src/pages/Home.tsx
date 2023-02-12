@@ -13,7 +13,7 @@ import {
 
 const Home = () => {
   return (
-    <>
+    <div id="main-container" data-scroll-container>
       <Transition />
       <Navbar />
       <div className="h-[100vh]">
@@ -24,7 +24,7 @@ const Home = () => {
       <ExperienceAndEducation />
       <Skills />
       <Contact />
-    </>
+    </div>
   );
 };
 
