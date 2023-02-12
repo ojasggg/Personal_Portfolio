@@ -7,11 +7,15 @@ import {
   ExperienceAndEducation,
   Skills,
   Contact,
+  Navbar,
+  Transition,
 } from "../components";
 
 const Home = () => {
   return (
-    <>
+    <div id="main-container" data-scroll-container>
+      <Transition />
+      <Navbar />
       <div className="h-[100vh]">
         <Hero />
       </div>
@@ -20,7 +24,7 @@ const Home = () => {
       <ExperienceAndEducation />
       <Skills />
       <Contact />
-    </>
+    </div>
   );
 };
 

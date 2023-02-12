@@ -1,8 +1,13 @@
+import { useEffect } from "react";
 import { BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
-import { Link, Route, Routes } from "react-router-dom";
-import { Navbar } from "./components";
-import { About, Error, Home, Projects, SiteCredit } from "./pages";
+import { Link, Route, Routes, useLocation } from "react-router-dom";
+import CustomCursor from "./components/CustomCursor/CustomCursor";
+import { About, Error, Home, ProjectPage, Projects, SiteCredit } from "./pages";
+
+// Import aos
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 type socialItems = {
   iconName: string;
@@ -34,21 +39,35 @@ const socialItems: socialItems = [
 ];
 
 const App = () => {
-  // TODO: Mobile Responsive left
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, [pathname]);
   // TODO: Animation Left
+
+  // aos init
+  useEffect(() => {
+    Aos.init({
+      duration: 600,
+      delay: 200,
+    });
+  });
+
   return (
-    <div className="m-auto w-fit overflow-hidden">
-      <Navbar />
+    <div className="relative mx-auto w-screen overflow-x-hidden">
+      <CustomCursor />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/site-credits" element={<SiteCredit />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/projects/:slug" element={<ProjectPage />} />
         <Route path="*" element={<Error />} />
       </Routes>
       {/* Socials Fixed */}
-      <div className="fixed bottom-0 z-[999] hidden md:right-[70px] lg:right-[70px] lg:flex xl:right-[100px]">
+      <div className="fixed bottom-0 z-[100] hidden md:right-[70px] lg:right-[70px] lg:flex xl:right-[100px]">
         <div className="flex flex-col items-center gap-8">
           <ul className="flex flex-col items-center gap-[30px] text-white/60">
             {socialItems.map((socialItem, index) => (

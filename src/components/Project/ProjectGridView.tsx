@@ -1,11 +1,17 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
 type projects = {
+  projectId: string;
   projectName: string;
   projectType: string;
+  projectFor: string;
   projectDesc: string;
+  projectMyRole: string;
   projectCover: string;
-  projectLink: string | null;
+  projectLiveLink: string | null;
+  projectGithubLink: string | null;
+  projectTechnicalSheets: string[];
   projectBgColor: string;
 };
 
@@ -30,15 +36,21 @@ const ProjectGridView = ({ listView, projects }: propsType) => {
   };
   return (
     <div className={`${listView ? "hidden" : "visible"} w-full`}>
-      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      <div
+        className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+        data-aos="fade-up"
+        data-aos-delay="300"
+        data-aos-duration="1000"
+      >
         {/* Project Card */}
         {projects.map((project, index) => (
-          <div
+          <Link
             className={`${
               project.projectBgColor !== null
                 ? project.projectBgColor
                 : "bg-green-200"
             } relative flex items-center justify-center overflow-hidden md:h-[240px] md:w-[1/2] lg:h-[340px] lg:w-[1/3] xl:h-[400px] xl:w-[1/4]`}
+            to={`/projects/${project.projectId}`}
             key={index}
           >
             <div
@@ -64,7 +76,7 @@ const ProjectGridView = ({ listView, projects }: propsType) => {
               </div>
               <div className="absolute hidden h-full w-full bg-gray-500 opacity-[0.5] transition-all delay-200 duration-200 ease-in hover:opacity-0 lg:flex"></div>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </div>

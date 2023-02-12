@@ -11,8 +11,13 @@ const Project = () => {
   const [listView, setListView] = useState<boolean>(true);
 
   return (
-    <section className="mt-20 h-fit max-md:mx-auto">
-      <h1 className="top-10 left-0 z-[-10] mx-auto p-0 font-AvenirHeavy text-[80px] uppercase leading-none tracking-tight text-white/20  md:text-[140px] lg:w-[1100px] lg:text-[200px] lg:tracking-normal xl:w-[1500px]">
+    <section className="mt-20 h-fit max-md:mx-auto" data-scroll-section>
+      <h1
+        className="top-10 left-0 z-[-10] mx-auto p-0 font-AvenirHeavy text-[80px] uppercase leading-none tracking-tight text-white/20  md:text-[140px] lg:w-[1100px] lg:text-[200px] lg:tracking-normal xl:w-[1500px]"
+        data-aos="fade-left"
+        data-aos-delay="200"
+        data-aos-duration="800"
+      >
         my <br /> <span className="text-white/80">projects</span>
       </h1>
       {/* Grid or Listview */}
@@ -29,6 +34,9 @@ const Project = () => {
           <Link
             className="flex w-fit items-center gap-2 rounded-xl border border-white/60  p-3 px-4 text-[20px] text-white/60 transition-all duration-200 ease-in hover:scale-105"
             to="/projects"
+            data-aos="fade-up"
+            data-aos-delay="300"
+            data-aos-duration="1000"
           >
             <p>More Projects</p>
             <RiShareBoxFill size={20} />

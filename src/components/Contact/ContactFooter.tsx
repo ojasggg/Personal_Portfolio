@@ -34,7 +34,13 @@ const socialItems: socialItems = [
 
 const ContactFooter = () => {
   return (
-    <div className="m-auto mt-10 flex w-[90%] justify-between border-t border-black/40 py-4 pb-4  lg:m-0 lg:w-full lg:pb-0 xl:py-5">
+    <div
+      className="m-auto mt-10 flex w-[90%] justify-between border-t border-black/40 py-4 pb-4  lg:m-0 lg:w-full xl:py-5"
+      data-aos="fade-down"
+      data-aos-offset="0"
+      data-aos-delay="200"
+      data-aos-duration="1000"
+    >
       <p className="hidden font-AvenirMedium text-[16px] text-black lg:flex">
         ojasggg@gmail.com
       </p>

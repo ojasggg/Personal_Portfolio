@@ -4,11 +4,19 @@
 
 @layer base {
   body {
-    @apply m-0 box-border bg-black p-0 text-white;
+    @apply m-0 box-border min-w-fit cursor-none overflow-x-hidden bg-black p-0 text-white;
   }
 
   input {
     @apply border-0 outline-0;
+  }
+
+  .blockBox {
+    @apply fixed z-[999] h-[100vh] w-[5%] bg-[#D3D2D0];
+  }
+
+  .blockBoxSmall {
+    @apply fixed z-[999] h-[100vh] w-[10%] bg-[#D3D2D0];
   }
 }
 
@@ -40,4 +48,43 @@
 @font-face {
   font-family: "Valencia";
   src: url("./assets/Fonts/Valencia/Valencia.ttf");
+}
+
+.rotateVertical_o {
+  animation: rotateVertical_letter_o 6s ease-in-out infinite;
+}
+
+.rotateVertical_g {
+  animation: rotateVertical_letter_g 3s ease-in-out infinite;
+}
+
+@keyframes rotateVertical_letter_o {
+  0%,
+  100% {
+    transform: rotateY(0deg);
+  }
+  25% {
+    transform: rotateY(90deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  75% {
+    transform: rotateY(1turn);
+  }
+}
+@keyframes rotateVertical_letter_g {
+  0%,
+  100% {
+    transform: rotateY(0deg);
+  }
+  25% {
+    transform: rotateY(90deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  75% {
+    transform: rotateY(1turn);
+  }
 }

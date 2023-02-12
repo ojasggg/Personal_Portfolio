@@ -10,7 +10,12 @@ type propsType = {
 const ProjectViewButton = ({ listView, setListView }: propsType) => {
   return (
     <div className="mt-10 mr-2 flex justify-end lg:mx-auto lg:w-[1100px] xl:w-[1500px]">
-      <div className="flex items-center justify-end gap-2 lg:gap-4">
+      <div
+        className="flex items-center justify-end gap-2 lg:gap-4"
+        data-aos="fade-down"
+        data-aos-delay="200"
+        data-aos-duration="800"
+      >
         <button
           className={`${
             listView ? "bg-white text-black" : "bg-transparent text-white"
