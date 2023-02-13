@@ -18,7 +18,7 @@ type projects = {
 
 type propsType = {
   listView: boolean;
-  projects: projects[];
+  projects: any;
 };
 
 const ProjectListView = ({ listView, projects }: propsType) => {
@@ -76,7 +76,7 @@ const ProjectListView = ({ listView, projects }: propsType) => {
         listView ? "" : "hidden"
       } project-inner relative mx-auto lg:w-[1100px] xl:w-[1500px]`}
     >
-      {projects.map((project, index) => (
+      {projects.map((project: projects, index: number) => (
         <Link
           className={`${
             projects.length - 1 === index ? "border-b" : ""

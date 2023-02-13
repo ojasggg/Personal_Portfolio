@@ -17,7 +17,7 @@ type projects = {
 
 type propsType = {
   listView: boolean;
-  projects: projects[];
+  projects: any;
 };
 
 const ProjectGridView = ({ listView, projects }: propsType) => {
@@ -43,7 +43,7 @@ const ProjectGridView = ({ listView, projects }: propsType) => {
         data-aos-duration="1000"
       >
         {/* Project Card */}
-        {projects.map((project, index) => (
+        {projects.map((project: projects, index: number) => (
           <Link
             className={`${
               project.projectBgColor !== null
