@@ -39,19 +39,21 @@ const ProjectIndividual = ({
           </p>
           <BsArrowUpRight size={16} />
         </Link>
-        <Link
-          className="flex items-center gap-2 rounded-full border border-white/60 bg-transparent py-[10px] px-[30px] transition-all duration-200 ease-in hover:scale-105"
-          to={`${Project?.projectLiveLink}`}
-          target="_blank"
-          data-aos="fade-left"
-          data-aos-delay="300"
-          data-aos-duration="1000"
-        >
-          <p className="font-AvenirMedium text-[14px] uppercase lg:text-[16px]">
-            Project Live
-          </p>
-          <BsArrowUpRight size={16} />
-        </Link>
+        {Project?.projectLiveLink && (
+          <Link
+            className="flex items-center gap-2 rounded-full border border-white/60 bg-transparent py-[10px] px-[30px] transition-all duration-200 ease-in hover:scale-105"
+            to={`${Project?.projectLiveLink}`}
+            target="_blank"
+            data-aos="fade-left"
+            data-aos-delay="300"
+            data-aos-duration="1000"
+          >
+            <p className="font-AvenirMedium text-[14px] uppercase lg:text-[16px]">
+              Project Live
+            </p>
+            <BsArrowUpRight size={16} />
+          </Link>
+        )}
       </div>
       <div>
         <div className="mx-auto w-[95%] py-8">
