@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { lerp } from "../../utils/utils.js";
 
-type project = {
+type projects = {
   projectId: string;
   projectName: string;
   projectType: string;
@@ -18,12 +18,12 @@ type project = {
 
 type propsType = {
   listView: boolean;
-  projects: project[];
+  projects: projects[];
 };
 
 const ProjectListView = ({ listView, projects }: propsType) => {
   const [divPosition, setDivPosition] = useState({ top: 0, left: 0 });
-  const [image, setImage] = useState<project>();
+  const [image, setImage] = useState<projects>();
 
   const [showImage, setShowImage] = useState(false);
   let cursorConfigs: any = {
@@ -31,7 +31,7 @@ const ProjectListView = ({ listView, projects }: propsType) => {
     y: { previous: 0, current: 0, amt: 0.2 },
   };
 
-  const handleShowImage = (image: project) => {
+  const handleShowImage = (image: projects) => {
     setShowImage(true);
     setImage(image);
   };

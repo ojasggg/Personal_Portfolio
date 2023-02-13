@@ -3,7 +3,11 @@ import { Link, useParams } from "react-router-dom";
 import CryptoCurrency from "../../assets/Images/Project/CryptoCurrency.png";
 import { overallProjects } from "../../Constants/projectList";
 
-const ProjectIndividual = ({ projectId }: { projectId: string }) => {
+const ProjectIndividual = ({
+  projectId,
+}: {
+  projectId: string | undefined;
+}) => {
   const Project = overallProjects.find((x) => x.projectId === projectId);
   return (
     <section className="mx-auto flex h-fit flex-col justify-center overflow-hidden py-10 lg:w-[800px] lg:py-20 xl:w-[1000px]">

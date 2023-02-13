@@ -1,7 +1,7 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { HiOutlineMenuAlt1 } from "react-icons/hi";
 import { RxCross2 } from "react-icons/rx";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 type navItems = {
   itemName: string;
@@ -16,7 +16,14 @@ const navItems: navItems[] = [
 ];
 
 const Navbar = () => {
+  const location = useLocation();
+  const [urlPath, setUrlPath] = useState<string | null>(null);
   const [toggleMenu, setToggleMenu] = useState(false);
+
+  useEffect(() => {
+    setUrlPath(location.pathname);
+  }, [location]);
+
   return (
     <section className="w-screen overflow-hidden" data-scroll-section>
       <nav className="mx-auto flex w-[90%] items-center justify-between py-6 lg:w-[1200px] lg:pb-4 xl:w-[1600px]">
@@ -57,7 +64,7 @@ const Navbar = () => {
             <li
               key={index}
               className={`${
-                navItem.active ? "text-white" : "text-white/60"
+                urlPath === navItem.link ? "text-white" : "text-white/60"
               } font-AvenirRoman text-[14px] uppercase`}
             >
               <Link to={navItem.link}>{navItem.itemName}</Link>
@@ -94,7 +101,7 @@ const Navbar = () => {
               <li
                 key={index}
                 className={`${
-                  navItem.active ? " text-white" : "text-white/60"
+                  urlPath === navItem.link ? " text-white" : "text-white/60"
                 } p-4 text-center font-AvenirRoman text-[20px] uppercase`}
               >
                 <Link to={navItem.link} onClick={() => setToggleMenu(false)}>
