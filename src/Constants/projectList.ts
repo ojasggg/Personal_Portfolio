@@ -30,7 +30,7 @@ export const projects: projects[] = [
     projectCover: CryptoCurrency,
     projectLiveLink: "https://ojasggg.github.io/cryptocurrency_landingpage/",
     projectGithubLink: "https://github.com/ojasggg/cryptocurrency_landingpage",
-    projectTechnicalSheets: ["TailwindCSS", "", "React.js", "Aos"],
+    projectTechnicalSheets: ["TailwindCSS", "React.js", "Aos"],
     projectBgColor: "bg-[#E8DFFB]",
   },
   {
@@ -44,7 +44,7 @@ export const projects: projects[] = [
     projectCover: SmartEcosystem,
     projectLiveLink: "https://ojasggg.github.io/Project_SmartEcosystem/",
     projectGithubLink: "https://github.com/ojasggg/Project_SmartEcosystem",
-    projectTechnicalSheets: ["TailwindCSS", "", "React.js", "Aos"],
+    projectTechnicalSheets: ["TailwindCSS", "React.js", "Aos"],
     projectBgColor: "bg-[#FCEFEE]",
   },
   {
@@ -114,7 +114,7 @@ export const overallProjects: projects[] = [
     projectCover: CryptoCurrency,
     projectLiveLink: "https://ojasggg.github.io/cryptocurrency_landingpage/",
     projectGithubLink: "https://github.com/ojasggg/cryptocurrency_landingpage",
-    projectTechnicalSheets: ["TailwindCSS", "", "React.js", "Aos"],
+    projectTechnicalSheets: ["TailwindCSS", "React.js", "Aos"],
     projectBgColor: "bg-[#E8DFFB]",
   },
   {
@@ -128,7 +128,7 @@ export const overallProjects: projects[] = [
     projectCover: SmartEcosystem,
     projectLiveLink: "https://ojasggg.github.io/Project_SmartEcosystem/",
     projectGithubLink: "https://github.com/ojasggg/Project_SmartEcosystem",
-    projectTechnicalSheets: ["TailwindCSS", "", "React.js", "Aos"],
+    projectTechnicalSheets: ["TailwindCSS", "React.js", "Aos"],
     projectBgColor: "bg-[#FCEFEE]",
   },
   {

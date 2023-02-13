@@ -16,7 +16,6 @@ const AboutMe = () => {
       >
         ABOUT ME
       </h1>
-      {/* TODO: Highlight some key points from the paragraph if needed */}
       <div className="z-[2] mr-0 ml-[60px] pt-[150px] md:pt-[120px] lg:mr-[57px] lg:ml-[263px] lg:pt-[140px] xl:pt-[160px]">
         <h3
           className="w-[95%] bg-gradient-to-r from-white/80 to-white bg-clip-text font-AvenirMedium text-[16px] text-transparent sm:text-[18px] md:text-[20px] lg:text-[22px] xl:text-[26px]"

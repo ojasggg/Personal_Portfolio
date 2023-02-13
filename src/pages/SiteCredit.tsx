@@ -18,11 +18,11 @@ const siteCredits = [
 const SiteCredit = () => {
   return (
     <>
-      <Transition />
+      {/* <Transition /> */}
       <Navbar />
-      <main className="m-auto mb-20 mt-20 flex h-fit flex-col lg:w-[1100px] xl:w-[1500px]">
+      <main className="mx-auto mb-20 mt-20 flex h-fit w-[95%] flex-col lg:w-[1100px] xl:w-[1500px]">
         <section className="mt-10 flex flex-col items-center">
-          <p className="max-w-[700px] text-center font-AvenirHeavy text-[40px] leading-tight text-white/40">
+          <p className="max-w-[700px] text-center text-center font-AvenirHeavy text-[26px] leading-tight text-white/40 lg:text-[40px]">
             I am <span className="text-white">not a Professional Designer</span>{" "}
             , I just create design using my intuition and little experience and
             to get some inspiration I need to explore some of the top designs
@@ -30,7 +30,7 @@ const SiteCredit = () => {
             designer to motion designer.
           </p>
           <p
-            className="mt-32 font-AvenirHeavy text-[40px]"
+            className="mt-16 font-AvenirHeavy text-[26px] lg:mt-32 lg:text-[40px]"
             data-aos="fade-left"
             data-aos-offset="0"
             data-aos-delay="200"
@@ -42,7 +42,7 @@ const SiteCredit = () => {
             {siteCredits.map((credit, index) => (
               <li
                 key={index}
-                className="font-AvenirRoman text-[30px] text-white/60"
+                className="font-AvenirRoman text-[20px] text-white/60 lg:text-[30px]"
                 data-aos="fade-down"
                 data-aos-offset="0"
                 data-aos-delay={`${200 + index * 100}`}

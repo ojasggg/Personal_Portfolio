@@ -44,7 +44,6 @@ const App = () => {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, [pathname]);
-  // TODO: Animation Left
 
   // aos init
   useEffect(() => {
