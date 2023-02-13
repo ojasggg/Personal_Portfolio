@@ -22,9 +22,6 @@ const Navbar = () => {
       <nav className="mx-auto flex w-[90%] items-center justify-between py-6 lg:w-[1200px] lg:pb-4 xl:w-[1600px]">
         {/* Ojash Gurung Logo */}
         <Link className="relative" to={"/home"}>
-          {/* TODO: Logo Animation 
-        1) Complete ->  Rotate Individual letters
-        */}
           <svg
             width="29"
             height="29"
