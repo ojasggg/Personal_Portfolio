@@ -7,14 +7,12 @@ type navItems = {
   itemName: string;
   active: boolean;
   link: string;
-  button: boolean;
 };
 
 const navItems: navItems[] = [
-  { itemName: "Home", active: true, link: "/home", button: false },
-  { itemName: "About", active: false, link: "/about", button: false },
-  { itemName: "Projects", active: false, link: "/projects", button: false },
-  { itemName: "Resume", active: false, link: "/resume", button: true },
+  { itemName: "Home", active: true, link: "/home" },
+  { itemName: "About", active: false, link: "/about" },
+  { itemName: "Projects", active: false, link: "/projects" },
 ];
 
 const Navbar = () => {
@@ -62,18 +60,20 @@ const Navbar = () => {
             <li
               key={index}
               className={`${
-                navItem.active || navItem.button
-                  ? "text-white"
-                  : "text-white/60"
-              } ${
-                navItem.button
-                  ? "cursor-pointer rounded-lg border border-white p-2 px-4"
-                  : ""
+                navItem.active ? "text-white" : "text-white/60"
               } font-AvenirRoman text-[14px] uppercase`}
             >
               <Link to={navItem.link}>{navItem.itemName}</Link>
             </li>
           ))}
+          <Link
+            className="cursor-pointer rounded-lg border border-white p-2 px-4 font-AvenirRoman text-[14px] uppercase"
+            to="/files/Resume.pdf"
+            target="_blank"
+            download
+          >
+            Resume
+          </Link>
         </ul>
         <div
           onClick={() => setToggleMenu((prev) => !prev)}
@@ -97,11 +97,7 @@ const Navbar = () => {
               <li
                 key={index}
                 className={`${
-                  navItem.button ? "bg-white text-black" : "text-white/60"
-                } ${
-                  navItem.button
-                    ? "cursor-pointer rounded-lg border border-white p-2 px-4"
-                    : ""
+                  navItem.active ? " text-white" : "text-white/60"
                 } p-4 text-center font-AvenirRoman text-[20px] uppercase`}
               >
                 <Link to={navItem.link} onClick={() => setToggleMenu(false)}>
@@ -109,6 +105,16 @@ const Navbar = () => {
                 </Link>
               </li>
             ))}
+            <li className="mt-2 cursor-pointer rounded-lg border border-white p-4 px-6 text-center font-AvenirRoman text-[20px] uppercase">
+              <Link
+                to="/files/Resume.pdf"
+                download
+                target={"_blank"}
+                onClick={() => setToggleMenu(false)}
+              >
+                Resume
+              </Link>
+            </li>
           </ul>
         </div>
       </div>

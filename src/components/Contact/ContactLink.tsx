@@ -70,7 +70,9 @@ const ContactLink = () => {
             data-aos-offset="0"
             data-aos-duration="600"
           >
-            <Link to="/resume">Resume</Link>
+            <Link to="/files/Resume.pdf" download target="_blank">
+              Resume
+            </Link>
           </li>
           <li
             data-aos="fade-right"
