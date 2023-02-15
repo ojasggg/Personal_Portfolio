@@ -3,6 +3,7 @@ import ChatApplication from "../assets/Images/Project/ChatApplication.png";
 import NepalBuy from "../assets/Images/Project/NepalBuy.png";
 import SmartEcosystem from "../assets/Images/Project/SmartEcosystem.png";
 import WeatherApplication from "../assets/Images/Project/WeatherApp.png";
+import ChatGPTClone from "../assets/Images/Project/ChatGPT_Clone.png";
 
 type projects = {
   projectId: string;
@@ -21,6 +22,28 @@ type projects = {
 export const projects: projects[] = [
   {
     projectId: "1",
+    projectName: "ChatGPT_Clone",
+    projectType: "Fullstack WebApp",
+    projectFor: "Personal Project",
+    projectDesc:
+      "Clone of ChatGPT using Openai API with all provided models to test. From Code model to text completion model.",
+    projectMyRole: "Full Stack Developer",
+    projectCover: ChatGPTClone,
+    projectLiveLink: "https://project-chatgpt.vercel.app/",
+    projectGithubLink: "https://github.com/ojasggg/Project_ChatGPT_Clone",
+    projectTechnicalSheets: [
+      "TailwindCSS",
+      "ReactJS",
+      "Firebase",
+      "NextJS",
+      "Next AUTH",
+      "swr",
+      "Openai API",
+    ],
+    projectBgColor: "bg-[#9593FF]",
+  },
+  {
+    projectId: "2",
     projectName: "CryptoCurrency",
     projectType: "Website",
     projectFor: "Personal Project",
@@ -30,11 +53,11 @@ export const projects: projects[] = [
     projectCover: CryptoCurrency,
     projectLiveLink: "https://ojasggg.github.io/cryptocurrency_landingpage/",
     projectGithubLink: "https://github.com/ojasggg/cryptocurrency_landingpage",
-    projectTechnicalSheets: ["TailwindCSS", "React.js", "Aos"],
+    projectTechnicalSheets: ["TailwindCSS", "ReactJS", "Aos"],
     projectBgColor: "bg-[#E8DFFB]",
   },
   {
-    projectId: "2",
+    projectId: "3",
     projectName: "SmartEcosystem",
     projectType: "Website",
     projectFor: "Personal Project",
@@ -44,11 +67,11 @@ export const projects: projects[] = [
     projectCover: SmartEcosystem,
     projectLiveLink: "https://ojasggg.github.io/Project_SmartEcosystem/",
     projectGithubLink: "https://github.com/ojasggg/Project_SmartEcosystem",
-    projectTechnicalSheets: ["TailwindCSS", "React.js", "Aos"],
+    projectTechnicalSheets: ["TailwindCSS", "ReactJS", "Aos"],
     projectBgColor: "bg-[#FCEFEE]",
   },
   {
-    projectId: "3",
+    projectId: "4",
     projectName: "NepalBuy",
     projectType: "Fullstack WebApp",
     projectFor: "Personal Project",
@@ -59,7 +82,7 @@ export const projects: projects[] = [
     projectGithubLink: "https://github.com/ojasggg/Project_Ecommerce",
     projectTechnicalSheets: [
       "TailwindCSS",
-      "React.js",
+      "ReactJS",
       "Aos",
       "Framer motion",
       "React Redux",
@@ -67,7 +90,7 @@ export const projects: projects[] = [
     projectBgColor: "bg-[#E2F3F5]",
   },
   {
-    projectId: "4",
+    projectId: "5",
     projectName: "ChatApplication",
     projectType: "Fullstack WebApp",
     projectFor: "Personal Project",
@@ -78,16 +101,16 @@ export const projects: projects[] = [
     projectGithubLink: "https://github.com/ojasggg/Chat_Application",
     projectTechnicalSheets: [
       "TailwindCSS",
-      "React.js",
+      "ReactJS",
       "Socket.io",
-      "Node.js",
+      "NodeJS",
       "MongoDB",
-      "Express.js",
+      "ExpressJS",
     ],
     projectBgColor: "bg-[#FFEBFA]",
   },
   {
-    projectId: "5",
+    projectId: "6",
     projectName: "WeatherApp",
     projectType: "Fullstack WebApp",
     projectFor: "Personal Project",
@@ -97,7 +120,7 @@ export const projects: projects[] = [
     projectCover: WeatherApplication,
     projectLiveLink: "https://ojasggg.github.io/weather_app/",
     projectGithubLink: "https://github.com/ojasggg/weather_app",
-    projectTechnicalSheets: ["OpenWeatherAPI", "React.js", "Node.js"],
+    projectTechnicalSheets: ["OpenWeatherAPI", "ReactJS", "NodeJS"],
     projectBgColor: "bg-[#CCECE6]",
   },
 ];
@@ -105,6 +128,28 @@ export const projects: projects[] = [
 export const overallProjects: projects[] = [
   {
     projectId: "1",
+    projectName: "ChatGPT_Clone",
+    projectType: "Fullstack WebApp",
+    projectFor: "Personal Project",
+    projectDesc:
+      "Clone of ChatGPT using Openai API with all provided models to test. From Code model to text completion model.",
+    projectMyRole: "Full Stack Developer",
+    projectCover: ChatGPTClone,
+    projectLiveLink: "https://project-chatgpt.vercel.app/",
+    projectGithubLink: "https://github.com/ojasggg/Project_ChatGPT_Clone",
+    projectTechnicalSheets: [
+      "TailwindCSS",
+      "ReactJS",
+      "Firebase",
+      "NextJS",
+      "Next AUTH",
+      "swr",
+      "Openai API",
+    ],
+    projectBgColor: "bg-[#9593FF]",
+  },
+  {
+    projectId: "2",
     projectName: "CryptoCurrency",
     projectType: "Website",
     projectFor: "Personal Project",
@@ -114,11 +159,11 @@ export const overallProjects: projects[] = [
     projectCover: CryptoCurrency,
     projectLiveLink: "https://ojasggg.github.io/cryptocurrency_landingpage/",
     projectGithubLink: "https://github.com/ojasggg/cryptocurrency_landingpage",
-    projectTechnicalSheets: ["TailwindCSS", "React.js", "Aos"],
+    projectTechnicalSheets: ["TailwindCSS", "ReactJS", "Aos"],
     projectBgColor: "bg-[#E8DFFB]",
   },
   {
-    projectId: "2",
+    projectId: "3",
     projectName: "SmartEcosystem",
     projectType: "Website",
     projectFor: "Personal Project",
@@ -128,11 +173,11 @@ export const overallProjects: projects[] = [
     projectCover: SmartEcosystem,
     projectLiveLink: "https://ojasggg.github.io/Project_SmartEcosystem/",
     projectGithubLink: "https://github.com/ojasggg/Project_SmartEcosystem",
-    projectTechnicalSheets: ["TailwindCSS", "React.js", "Aos"],
+    projectTechnicalSheets: ["TailwindCSS", "ReactJS", "Aos"],
     projectBgColor: "bg-[#FCEFEE]",
   },
   {
-    projectId: "3",
+    projectId: "4",
     projectName: "NepalBuy",
     projectType: "Fullstack WebApp",
     projectFor: "Personal Project",
@@ -143,7 +188,7 @@ export const overallProjects: projects[] = [
     projectGithubLink: "https://github.com/ojasggg/Project_Ecommerce",
     projectTechnicalSheets: [
       "TailwindCSS",
-      "React.js",
+      "ReactJS",
       "Aos",
       "Framer motion",
       "React Redux",
@@ -151,7 +196,7 @@ export const overallProjects: projects[] = [
     projectBgColor: "bg-[#E2F3F5]",
   },
   {
-    projectId: "4",
+    projectId: "5",
     projectName: "ChatApplication",
     projectType: "Fullstack WebApp",
     projectFor: "Personal Project",
@@ -162,16 +207,16 @@ export const overallProjects: projects[] = [
     projectGithubLink: "https://github.com/ojasggg/Chat_Application",
     projectTechnicalSheets: [
       "TailwindCSS",
-      "React.js",
+      "ReactJS",
       "Socket.io",
-      "Node.js",
+      "NodeJS",
       "MongoDB",
-      "Express.js",
+      "ExpressJS",
     ],
     projectBgColor: "bg-[#FFEBFA]",
   },
   {
-    projectId: "5",
+    projectId: "6",
     projectName: "WeatherApp",
     projectType: "Fullstack WebApp",
     projectFor: "Personal Project",
@@ -181,14 +226,14 @@ export const overallProjects: projects[] = [
     projectCover: WeatherApplication,
     projectLiveLink: "https://ojasggg.github.io/weather_app/",
     projectGithubLink: "https://github.com/ojasggg/weather_app",
-    projectTechnicalSheets: ["OpenWeatherAPI", "React.js", "Node.js"],
+    projectTechnicalSheets: ["OpenWeatherAPI", "ReactJS", "NodeJS"],
     projectBgColor: "bg-[#CCECE6]",
   },
 ];
 
 export const onGoingProjects: projects[] = [
   {
-    projectId: "3",
+    projectId: "4",
     projectName: "NepalBuy",
     projectType: "Fullstack WebApp",
     projectFor: "Personal Project",
@@ -199,7 +244,7 @@ export const onGoingProjects: projects[] = [
     projectGithubLink: "https://github.com/ojasggg/Project_Ecommerce",
     projectTechnicalSheets: [
       "TailwindCSS",
-      "React.js",
+      "ReactJS",
       "Aos",
       "Framer motion",
       "React Redux",
@@ -207,7 +252,7 @@ export const onGoingProjects: projects[] = [
     projectBgColor: "bg-[#E2F3F5]",
   },
   {
-    projectId: "4",
+    projectId: "5",
     projectName: "ChatApplication",
     projectType: "Fullstack WebApp",
     projectFor: "Personal Project",
@@ -218,11 +263,11 @@ export const onGoingProjects: projects[] = [
     projectGithubLink: "https://github.com/ojasggg/Chat_Application",
     projectTechnicalSheets: [
       "TailwindCSS",
-      "React.js",
+      "ReactJS",
       "Socket.io",
-      "Node.js",
+      "NodeJS",
       "MongoDB",
-      "Express.js",
+      "ExpressJS",
     ],
     projectBgColor: "bg-[#FFEBFA]",
   },
