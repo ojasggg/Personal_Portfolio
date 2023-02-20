@@ -39,7 +39,7 @@ const socialItems: socialItems = [
   },
 ];
 
-ReactGA.initialize(import.meta.env.VITE_GA_TRACKING_ID);
+ReactGA.initialize("UA-221451115-2");
 
 const App = () => {
   const { pathname } = useLocation();
