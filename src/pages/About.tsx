@@ -1,8 +1,8 @@
 import React from "react";
-import Profile from "../assets/Images/Picture.jpg";
 import { Contact, Navbar, Transition } from "../components";
-import Nepal from "../assets/Images/Nepal.jpg";
-import UI from "../assets/Images/UI.jpg";
+import Profile from "../assets/Images/Personal/Picture.jpg";
+import Nepal from "../assets/Images/Personal/Nepal.jpg";
+import UI from "../assets/Images/Personal/UI.jpg";
 
 const About = () => {
   return (
