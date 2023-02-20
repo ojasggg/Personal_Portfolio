@@ -1,5 +1,5 @@
-import React from "react";
-
+import React, { useEffect } from "react";
+import ReactGA from "react-ga";
 import {
   Hero,
   AboutMe,
@@ -12,6 +12,9 @@ import {
 } from "../components";
 
 const Home = () => {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname);
+  });
   return (
     <div id="main-container" data-scroll-container>
       <Transition />

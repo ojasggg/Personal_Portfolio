@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import ReactGA from "react-ga";
 import { Contact, Navbar, Transition } from "../components";
 import ProjectGridView from "../components/Project/ProjectGridView";
 import ProjectListView from "../components/Project/ProjectListView";
@@ -9,6 +10,9 @@ const Projects = () => {
   const [projectListView, setProjectListView] = useState<boolean>(true);
   const [onGoingProjectListView, setOnGoingProjectListView] =
     useState<boolean>(true);
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname);
+  });
   return (
     <>
       <Transition />

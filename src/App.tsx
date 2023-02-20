@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import ReactGA from "react-ga";
 import { BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 import { Link, Route, Routes, useLocation } from "react-router-dom";
@@ -37,6 +38,8 @@ const socialItems: socialItems = [
     link: "#",
   },
 ];
+
+ReactGA.initialize(import.meta.env.VITE_GA_TRACKING_ID);
 
 const App = () => {
   const { pathname } = useLocation();

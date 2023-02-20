@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+import ReactGA from "react-ga";
 import { Contact, Navbar, Transition } from "../components";
 
 const siteCredits = [
@@ -18,6 +20,9 @@ const siteCredits = [
 ];
 
 const SiteCredit = () => {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname);
+  });
   return (
     <>
       <Transition />

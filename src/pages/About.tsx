@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
+import ReactGA from "react-ga";
 import { Contact, Navbar, Transition } from "../components";
 import Profile from "../assets/Images/Personal/Picture.jpg";
 import Nepal from "../assets/Images/Personal/Nepal.jpg";
 import UI from "../assets/Images/Personal/UI.jpg";
 
 const About = () => {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname);
+  });
   return (
     <>
       <Transition />

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { RiShareBoxFill } from "react-icons/ri";
 import { Link } from "react-router-dom";
 
