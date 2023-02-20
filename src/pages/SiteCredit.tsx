@@ -3,6 +3,8 @@ import { Contact, Navbar, Transition } from "../components";
 const siteCredits = [
   "React",
   "Tailwind",
+  "Dribble",
+  "Behance",
   "Vite",
   "Vercel",
   "gsap",
@@ -18,16 +20,17 @@ const siteCredits = [
 const SiteCredit = () => {
   return (
     <>
-      {/* <Transition /> */}
+      <Transition />
       <Navbar />
       <main className="mx-auto mb-20 mt-20 flex h-fit w-[95%] flex-col lg:w-[1100px] xl:w-[1500px]">
         <section className="mt-10 flex flex-col items-center">
           <p className="max-w-[700px] text-center font-AvenirHeavy text-[26px] leading-tight text-white/40 lg:text-[40px]">
             I am <span className="text-white">not a Professional Designer</span>{" "}
-            , I just create design using my intuition and little experience and
-            to get some inspiration I need to explore some of the top designs
-            that online creators have created from Creative Designer to web
-            designer to motion designer.
+            , I just created this design by my little experience of Web
+            designing and from research of may inspiring designs out there in
+            the Internet. I explore some of the top designs that experienced
+            Creative Designer, FrontEnd Developers, UI/UX Designers, Motion
+            Graphics Designers have created and got inspired by their works.
           </p>
           <p
             className="mt-16 font-AvenirHeavy text-[26px] lg:mt-32 lg:text-[40px]"
@@ -52,10 +55,6 @@ const SiteCredit = () => {
               </li>
             ))}
           </ul>
-
-          {/* <p className="mt-20 max-w-[700px] p-0 text-center font-AvenirHeavy text-[80px] uppercase leading-tight tracking-tighter text-white">
-            Thankyou Very Much!
-          </p> */}
         </section>
       </main>
       <Contact />
