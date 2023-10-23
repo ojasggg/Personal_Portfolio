@@ -1,3 +1,5 @@
+import Profile from "../../assets/Images/Profile/Profile.png";
+
 const Hero = () => {
   return (
     <section
@@ -5,7 +7,7 @@ const Hero = () => {
       data-scroll-section
     >
       <img
-        src="/src/assets/Images/Personal/Profile.png"
+        src={Profile}
         alt="Profile Picture"
         width={240}
         className="mb-10"
