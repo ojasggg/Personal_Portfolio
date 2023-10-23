@@ -7,3 +7,4 @@ export { default as ExperienceAndEducation } from "./Experience&Education/Experi
 export { default as Skills } from "./Skills/Skills";
 export { default as Contact } from "./Contact/Contact";
 export { default as Transition } from "./Transition/Transition";
+export { default as Achievement } from "./Achievement/Achievements";

@@ -42,7 +42,7 @@ const ContactFooter = () => {
       data-aos-duration="1000"
     >
       <p className="hidden font-AvenirMedium text-[16px] text-black lg:flex">
-        ojasggg@gmail.com
+        gurungojash0@gmail.com
       </p>
       <ul className="flex items-center gap-[14px] text-black lg:hidden">
         {socialItems.map((socialItem, index) => (

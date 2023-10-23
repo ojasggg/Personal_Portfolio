@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import ReactGA from "react-ga";
-import { Contact, Navbar, Transition } from "../components";
+import { Contact, Navbar } from "../components";
 
 const siteCredits = [
   "React",
@@ -25,17 +25,17 @@ const SiteCredit = () => {
   });
   return (
     <>
-      <Transition />
       <Navbar />
       <main className="mx-auto mb-20 mt-20 flex h-fit w-[95%] flex-col lg:w-[1100px] xl:w-[1500px]">
         <section className="mt-10 flex flex-col items-center">
-          <p className="max-w-[700px] text-center font-AvenirHeavy text-[26px] leading-tight text-white/40 lg:text-[40px]">
-            I am <span className="text-white">not a Professional Designer</span>{" "}
-            , I just created this design by my little experience of Web
-            designing and from research of may inspiring designs out there in
-            the Internet. I explore some of the top designs that experienced
-            Creative Designer, FrontEnd Developers, UI/UX Designers, Motion
-            Graphics Designers have created and got inspired by their works.
+          <p className="max-w-[1000px] text-center font-AvenirHeavy text-[26px] leading-normal text-white/40">
+            I want to clarify that,{" "}
+            <span className="text-white">I am not a professional designer</span>{" "}
+            but I have created this design using my limited experience in web
+            design and researching many inspiring designs on the internet. I
+            explored some of the top designs created by experienced creative
+            designers, front-end developers, UI/UX designers, and motion
+            graphics designers, and found inspiration in their work.
           </p>
           <p
             className="mt-16 font-AvenirHeavy text-[26px] lg:mt-32 lg:text-[40px]"

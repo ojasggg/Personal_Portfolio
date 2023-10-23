@@ -9,6 +9,7 @@ import {
   Contact,
   Navbar,
   Transition,
+  Achievement,
 } from "../components";
 
 const Home = () => {
@@ -17,13 +18,14 @@ const Home = () => {
   });
   return (
     <div id="main-container" data-scroll-container>
-      <Transition />
+      {/* <Transition /> */}
       <Navbar />
       <div className="h-[100vh]">
         <Hero />
       </div>
       <AboutMe />
       <Project />
+      <Achievement />
       <ExperienceAndEducation />
       <Skills />
       <Contact />

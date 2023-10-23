@@ -1,10 +1,9 @@
 import gif3 from "../assets/Gifs/disappointed-face.gif";
-import { Contact, Navbar, Transition } from "../components";
+import { Contact, Navbar } from "../components";
 
 const Error = () => {
   return (
     <>
-      <Transition />
       <Navbar />
       <main className="flex h-[90vh] flex-col items-center justify-center gap-4">
         <h1 className="p-0 font-AvenirMedium text-[160px] leading-none lg:text-[200px] xl:text-[260px]">

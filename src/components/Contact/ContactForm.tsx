@@ -57,6 +57,7 @@ const ContactForm = () => {
             placeholder="Name *"
             name="Name"
             className="w-[50%] border-b border-black/40 bg-transparent pb-[16px] font-AvenirRoman text-[16px] text-black placeholder:text-black/40 lg:text-[18px] xl:pb-[22px]"
+            required
           />
           <ValidationError prefix="Name" field="name" errors={state.errors} />
           <input
@@ -64,6 +65,7 @@ const ContactForm = () => {
             placeholder="Email *"
             name="Email"
             className="w-[50%] border-b border-black/40 bg-transparent pb-[16px] font-AvenirRoman text-[16px]  text-black placeholder:text-black/40 lg:text-[18px] xl:pb-[22px]"
+            required
           />
           <ValidationError prefix="Email" field="email" errors={state.errors} />
         </div>
@@ -72,6 +74,7 @@ const ContactForm = () => {
           placeholder="Subject *"
           name="Subject"
           className="mt-[26px] w-full border-b border-black/40 bg-transparent pb-[16px] font-AvenirRoman text-[16px] text-black placeholder:text-black/40 lg:text-[18px] xl:mt-[46px] xl:pb-[22px]"
+          required
         />
         <ValidationError
           prefix="Subject"
@@ -83,6 +86,7 @@ const ContactForm = () => {
           placeholder="Message *"
           name="Message"
           className="mt-[26px] w-full border-b border-black/40 bg-transparent pb-[60px] font-AvenirRoman text-[16px] text-black placeholder:text-black/40 lg:pb-[100px] lg:text-[18px] xl:mt-[46px] xl:pb-[190px]"
+          required
         />
         <ValidationError
           prefix="Message"

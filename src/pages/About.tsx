@@ -1,17 +1,11 @@
-import React, { useEffect } from "react";
-import ReactGA from "react-ga";
 import { Contact, Navbar, Transition } from "../components";
 import Profile from "../assets/Images/Personal/Picture.jpg";
 import Nepal from "../assets/Images/Personal/Nepal.jpg";
 import UI from "../assets/Images/Personal/UI.jpg";
 
 const About = () => {
-  useEffect(() => {
-    ReactGA.pageview(window.location.pathname);
-  });
   return (
     <>
-      <Transition />
       <Navbar />
       <main className="m-auto mb-40 mt-16 flex h-fit flex-col lg:mt-20 lg:w-[1100px] xl:w-[1500px]">
         <section className="relative h-fit">
@@ -42,7 +36,7 @@ const About = () => {
               data-aos-delay="200"
               data-aos-duration="1000"
             >
-              Web Designer
+              Data Science
             </p>
             <div className="m-0 flex w-full justify-end pr-6 lg:pr-0">
               <p
@@ -52,7 +46,7 @@ const About = () => {
                 data-aos-delay="300"
                 data-aos-duration="1000"
               >
-                Full -Stack
+                Artificial Intelligence
               </p>
             </div>
             <p
@@ -62,7 +56,7 @@ const About = () => {
               data-aos-delay="400"
               data-aos-duration="1000"
             >
-              Developer
+              Web Developer
             </p>
           </div>
           <div className="mt-20 flex gap-10">
@@ -102,9 +96,10 @@ const About = () => {
                     data-aos-delay="300"
                     data-aos-duration="1000"
                   >
-                    Hi, I was born in 2000 in Kathmandu, Nepal. Ever since my
-                    childhood I loved to play Cricket and loved Computers. I go
-                    my first PC at the age of 11 thanks to my Aunt.
+                    Hi! I was born in Kathmandu, Nepal in 2000. Ever since my
+                    childhood, I have loved playing cricket and working with
+                    electronics. When I was 11 years old, my aunt gave me my
+                    first PC.
                   </h3>
                   <h3
                     className="font-AvenirRoman text-[20px] text-white/60 xl:text-[24px]"
@@ -112,10 +107,14 @@ const About = () => {
                     data-aos-delay="400"
                     data-aos-duration="1000"
                   >
-                    During my Graduation I got hang of web development and
-                    started mentoring some of my local students. But web
-                    development has many fields from front-end, back-end,
-                    dev-sec-ops(devops), QA, SEO, UI/UX.
+                    During my graduation, I participated in numerous projects
+                    with my team and independently learned about machine
+                    learning algorithms and their applications. Initially, I
+                    found concepts such as supervised learning, unsupervised
+                    learning, and reinforcement learning to be challenging and
+                    confusing. However, as I began to apply these concepts to
+                    real-world scenarios, I slowly started to comprehend their
+                    applications and potential uses.
                   </h3>
                 </div>
                 <img
@@ -143,14 +142,17 @@ const About = () => {
                   data-aos-delay="300"
                   data-aos-duration="1000"
                 >
-                  But I Love to play with design and convert them into
-                  functionable websites, aiming always to keep it responsive and
-                  adaptive, optimized, performant and accessible. But I felt
-                  things were still missing so I explored backend specially
-                  RestAPI development, data model schemas and database
-                  management with deployment of websites. Well there is not much
-                  to say but I love what I do and love to work on ambitious
-                  projects with positive people in a conducive work environment.
+                  I have a keen interest in web development as well. It's not
+                  just because of creating websites, but to showcasing my
+                  projects. This is the main reason for creating my website.
+                  Another important reason for studying machine learning and web
+                  development is to participate in open-source contributions
+                  such as Hackathon, Hacktoberfest, GSOC, and many more. I have
+                  constantly been part of these Hackathon tournaments and have
+                  given my sufficient time getting involved in open source
+                  communities. I have also started mentoring some of my local
+                  students. I love to share what I learn because when I was
+                  researching and studying, I had no one to guide me.
                 </h3>
               </div>
             </div>

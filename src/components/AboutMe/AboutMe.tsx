@@ -1,4 +1,3 @@
-import React, { useEffect } from "react";
 import { RiShareBoxFill } from "react-icons/ri";
 import { Link } from "react-router-dom";
 
@@ -23,28 +22,32 @@ const AboutMe = () => {
           data-aos-delay="200"
           data-aos-duration="1400"
         >
-          Love to play with design and convert them into{" "}
+          During my third semester, I had a strong desire to develop a solid
+          foundation in machine learning algorithms, data preprocessing
+          techniques, data visualization, and Python programming. Throughout my
+          academic journey, I have been driven by leveraging technology to
+          derive meaningful insights from data.
+          <br /> My passion grew even more when{" "}
           <span
             className="text-white"
             data-aos="fade-up"
             data-aos-delay="400"
             data-aos-duration="600"
           >
-            functionable websites, aiming always to keep it responsive and
-            adaptive, optimized, performant and accessible.
+            I participated in and won multiple of college competitions.
           </span>{" "}
-          But I felt things were still missing so I explored backend specially
-          RestAPI development, data model schemas and database management with
-          deployment of websites. Well there is not much to say but I love what
-          I do and love to work on{" "}
+          With a desire to keep a deep understanding of various machine learning
+          algorithms, I constantly keep in check to develop intelligent models
+          that can analyze complex datasets and make accurate predictions.{" "}
           <span
             className="text-white"
             data-aos="fade-up"
             data-aos-delay="400"
             data-aos-duration="800"
           >
-            ambitious projects with positive people in a conducive work
-            environment.
+            I am experienced in data preprocessing techniques, which allow me to
+            effectively clean, transform, and prepare data for analysis,
+            ensuring its quality and integrity.
           </span>
         </h3>
       </div>

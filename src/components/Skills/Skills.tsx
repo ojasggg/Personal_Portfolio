@@ -11,43 +11,29 @@ type Skill = {
 const skillLists: Skill[] = [
   {
     skillName: "languages",
-    skillSets: [
-      "HTML",
-      "CSS",
-      "SASS/SCSS",
-      "Vanilla Javascript",
-      "Typescript",
-      "Python",
-      "Java",
-    ],
+    skillSets: ["Python", "Java", "Javascript", "Typescript"],
   },
   {
-    skillName: "Framework/ libraries/ others",
+    skillName: "libraries/ framework/ others",
     skillSets: [
+      "Linear Regression",
+      "Regression Model",
+      " Classification",
+      "Gradient Descent",
+      "Cost Function",
+      "Scikit-Learn",
+      "NumPy",
       "React.js",
-      "Next.js",
-      "Node.js",
-      "Express.js",
-      "Framer Motion",
-      "Tailwind CSS",
-      "Styled Component",
-      "MUI",
+      "RestAPI Development",
     ],
   },
   {
     skillName: "database",
-    skillSets: ["MongoDB", "MySQL", "PostgreSQL", "Neo4j"],
+    skillSets: ["MySQL", "MongoDB", "PostgreSQL", "Neo4j"],
   },
   {
     skillName: "methodologies/ others",
-    skillSets: [
-      "Agile Methodology",
-      "Waterfall Methodology",
-      "MVP Strategy",
-      "Design System",
-      "Wireframe & Prototyping",
-      "Responsive & Adaptive Design",
-    ],
+    skillSets: ["Agile Methodology", "Waterfall Methodology", "MVP Strategy"],
   },
 ];
 
@@ -151,16 +137,16 @@ const Skills = () => {
             data-aos-delay="200"
             data-aos-duration="1400"
           >
-            Developers need {""}
+            Developers need{" "}
             <span
               className="text-white"
               data-aos="fade-up"
               data-aos-delay="400"
               data-aos-duration="600"
             >
-              to learn and be updated with latest technologies everyday
+              to constantly learn and stay updated with the latest technologies.
             </span>
-            , so <br /> this list got really long{" "}
+            Thus, the list of <br /> technologies we need to learn is long. {""}
             <span
               className="inline-block"
               data-aos="fade-up"
@@ -173,14 +159,7 @@ const Skills = () => {
                 className="w-[26px] lg:w-[30px] "
               />
             </span>
-            .
           </p>
-          {/* <p className="mt-2 font-AvenirMedium text-[18px] text-white/60">
-            See{" "}
-            <Link to="#" className="text-white underline">
-              more frameworks/libraries here.
-            </Link>
-          </p> */}
         </div>
       </div>
     </section>

@@ -1,5 +1,4 @@
-import { useState, useEffect } from "react";
-import ReactGA from "react-ga";
+import { useState } from "react";
 import { Contact, Navbar, Transition } from "../components";
 import ProjectGridView from "../components/Project/ProjectGridView";
 import ProjectListView from "../components/Project/ProjectListView";
@@ -10,12 +9,9 @@ const Projects = () => {
   const [projectListView, setProjectListView] = useState<boolean>(true);
   const [onGoingProjectListView, setOnGoingProjectListView] =
     useState<boolean>(true);
-  useEffect(() => {
-    ReactGA.pageview(window.location.pathname);
-  });
+
   return (
     <>
-      <Transition />
       <Navbar />
       <main className="my-20 h-fit overflow-hidden xl:mt-40">
         <section>
@@ -26,7 +22,6 @@ const Projects = () => {
           <div className="mb-10">
             <p className="text-center font-AvenirMedium text-sm text-white/60">
               Note: Projects listed here are mainly freelance/personal projects
-              Viewing All projects
             </p>
           </div>
           <ProjectViewButton
@@ -65,7 +60,6 @@ const Projects = () => {
               data-aos-duration="1200"
             >
               Note: Projects listed here are mainly freelance/personal projects
-              Viewing All projects
             </p>
           </div>
           <ProjectViewButton

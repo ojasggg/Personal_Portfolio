@@ -2,7 +2,7 @@ const educationList = [
   {
     degree: "Bachelor Degree",
     completedDate: "aug 2022",
-    doneFrom: "Softwarica College of IT and E-commerce",
+    doneFrom: "Coventry University",
     course: "Bsc(Hons) in Computing",
   },
   {
