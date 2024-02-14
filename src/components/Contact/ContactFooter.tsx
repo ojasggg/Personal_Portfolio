@@ -59,7 +59,7 @@ const ContactFooter = () => {
 
       <div>
         <p className="font-AvenirMedium text-[14px] text-black lg:text-[16px]">
-          &copy; 2023 Ojash Gurung
+          &copy; 2024 Ojash Gurung
         </p>
       </div>
     </div>
