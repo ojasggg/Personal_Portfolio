@@ -1,5 +1,11 @@
 const educationList = [
   {
+    degree: "Masters",
+    completedDate: "Ongoing",
+    doneFrom: "Troy University",
+    course: "Computer Science",
+  },
+  {
     degree: "Bachelor Degree",
     completedDate: "aug 2022",
     doneFrom: "Coventry University",
@@ -10,12 +16,6 @@ const educationList = [
     completedDate: "feb 2019",
     doneFrom: "Golden Gate Int'l Secondary School",
     course: "+2 Science",
-  },
-  {
-    degree: "slc",
-    completedDate: "2016",
-    doneFrom: "Apex life school",
-    course: "",
   },
 ];
 
