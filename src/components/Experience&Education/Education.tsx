@@ -1,21 +1,21 @@
 const educationList = [
   {
-    degree: "Masters",
-    completedDate: "Ongoing",
-    doneFrom: "Troy University",
-    course: "Computer Science",
+    degree: "Monroe University",
+    completedDate: "Expected graduation, Sep 2026",
+    doneFrom: "New York",
+    course: "Master's in Computer Science",
   },
   {
-    degree: "Bachelor Degree",
-    completedDate: "aug 2022",
-    doneFrom: "Coventry University",
-    course: "Bsc(Hons) in Computing",
+    degree: "Troy University",
+    completedDate: "Jan 2024 - May 2024",
+    doneFrom: "Troy, Alabama",
+    course: "Master's in Computer Science - Artificial Intelligence (Transferred)",
   },
   {
-    degree: "Grade 11 & 12",
-    completedDate: "feb 2019",
-    doneFrom: "Golden Gate Int'l Secondary School",
-    course: "+2 Science",
+    degree: "Coventry University",
+    completedDate: "March 2019 - Aug 2022",
+    doneFrom: "Coventry, UK",
+    course: "Bachelor's in computer science (GPA 3.41)",
   },
 ];
 
@@ -32,7 +32,7 @@ const Education = () => {
       </h1>
 
       <div className="z-[2] m-auto flex w-[90%] flex-col items-end pt-[180px] lg:pt-[160px] xl:pt-[170px]">
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-8">
           {educationList.map((education, index) => (
             <div key={index}>
               <p
@@ -67,7 +67,7 @@ const Education = () => {
                   {education.doneFrom}
                 </p>
               </div>
-              <div className="mt-4">
+              <div className="mt-2">
                 <p
                   className="leading-wide max-w-[1040px] font-AvenirRoman  text-[16px] text-white/60 lg:text-[18px] xl:text-[24px] xl:leading-10"
                   data-aos="fade-up"
