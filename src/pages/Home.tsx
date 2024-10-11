@@ -23,7 +23,7 @@ const Home = () => {
       <div className="h-[100vh]">
         <Hero />
       </div>
-      <AboutMe />
+      {/* <AboutMe /> */}
       <Project />
       <Achievement />
       <ExperienceAndEducation />
