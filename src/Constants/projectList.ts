@@ -2,7 +2,6 @@ import CryptoCurrency from "../assets/Images/Project/CryptoCurrency.png";
 import ChatApplication from "../assets/Images/Project/ChatApplication.png";
 import NepalBuy from "../assets/Images/Project/NepalBuy.png";
 import SmartEcosystem from "../assets/Images/Project/SmartEcosystem.png";
-import WeatherApplication from "../assets/Images/Project/WeatherApp.png";
 import ChatGPTClone from "../assets/Images/Project/ChatGPT_Clone.png";
 
 type projects = {
@@ -109,20 +108,6 @@ export const projects: projects[] = [
     ],
     projectBgColor: "bg-[#FFEBFA]",
   },
-  {
-    projectId: "6",
-    projectName: "WeatherApp",
-    projectType: "Fullstack WebApp",
-    projectFor: "Personal Project",
-    projectDesc:
-      "Weather web app is small site which throws output of weather status using OpenWeatherMap API.  ",
-    projectMyRole: "FullStack Developer",
-    projectCover: WeatherApplication,
-    projectLiveLink: "https://ojasggg.github.io/weather_app/",
-    projectGithubLink: "https://github.com/ojasggg/weather_app",
-    projectTechnicalSheets: ["OpenWeatherAPI", "ReactJS", "NodeJS"],
-    projectBgColor: "bg-[#CCECE6]",
-  },
 ];
 
 export const overallProjects: projects[] = [
@@ -214,20 +199,6 @@ export const overallProjects: projects[] = [
       "ExpressJS",
     ],
     projectBgColor: "bg-[#FFEBFA]",
-  },
-  {
-    projectId: "6",
-    projectName: "WeatherApp",
-    projectType: "Fullstack WebApp",
-    projectFor: "Personal Project",
-    projectDesc:
-      "Weather web app is small site which throws output of weather status using OpenWeatherMap API.  ",
-    projectMyRole: "FullStack Developer",
-    projectCover: WeatherApplication,
-    projectLiveLink: "https://ojasggg.github.io/weather_app/",
-    projectGithubLink: "https://github.com/ojasggg/weather_app",
-    projectTechnicalSheets: ["OpenWeatherAPI", "ReactJS", "NodeJS"],
-    projectBgColor: "bg-[#CCECE6]",
   },
 ];
 
