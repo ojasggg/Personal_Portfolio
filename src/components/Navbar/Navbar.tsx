@@ -110,7 +110,7 @@ const Navbar = () => {
             ))}
             <li className="mt-2 cursor-pointer rounded-lg border border-white p-4 px-6 text-center font-AvenirRoman text-[20px] uppercase">
               <Link
-                to="/files/Resume.pdf"
+                to="/files/Ojash_Gurung_Resume.pdf"
                 download
                 target={"_blank"}
                 onClick={() => setToggleMenu(false)}
