@@ -11,7 +11,6 @@ type navItems = {
 
 const navItems: navItems[] = [
   { itemName: "Home", active: true, link: "/home" },
-  { itemName: "About", active: false, link: "/about" },
   { itemName: "Projects", active: false, link: "/projects" },
 ];
 

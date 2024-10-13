@@ -18,8 +18,23 @@ const Achievements = () => {
       >
         Achievements
       </h1>
-      <div className="flex gap-4 pt-[240px]">
-        <div className="z-[10] mx-auto mt-[100px] w-[90%] lg:ml-[100px]">
+      <div className="lg:flex lg:gap-10 pt-[240px]">
+        <div className="grid max-h-fit lg:max-w-[36%] grid-cols-2 grid-rows-2 gap-4 lg:ml-[100px]">
+          <div className="col-span-2 w-full">
+            <img src={Img2} alt="Bright night" className="rounded" />
+          </div>
+          <div className="w-full">
+            <img
+              src={Img1}
+              alt="Bright night"
+              className=" w-full rounded lg:h-[138px] xl:h-fit"
+            />
+          </div>
+          <div className="w-full">
+            <img src={Img3} alt="Bright night" className=" rounded" />
+          </div>
+        </div>
+        <div className="z-[10] mt-0 mx-auto lg:mt-[50px] w-[90%]">
           <p
             className="font-AvenirBook text-[14px] text-white/60 lg:text-[18px]"
             data-aos="fade-left"
@@ -30,7 +45,7 @@ const Achievements = () => {
           </p>
           <div className="flex items-center gap-2 lg:gap-4 lg:pt-2">
             <h3
-              className="z-10 p-0 font-AvenirMedium text-[16px] uppercase leading-none text-white lg:text-[26px] xl:text-[30px]"
+              className="z-10 p-0 font-AvenirMedium text-[14px] uppercase leading-none text-white lg:text-[22px] xl:text-[26px]"
               data-aos="fade-left"
               data-aos-delay="400"
               data-aos-duration="800"
@@ -44,12 +59,12 @@ const Achievements = () => {
               data-aos-duration="800"
             ></div>
             <p
-              className="z-10 p-0 font-AvenirLight text-[16px] leading-none text-white/60 lg:text-[18px] xl:text-[20px]"
+              className="z-10 p-0 font-AvenirLight text-[14px] leading-none text-white/60 lg:text-[16px] xl:text-[18px] uppercase"
               data-aos="fade-left"
               data-aos-delay="400"
               data-aos-duration="800"
             >
-              Softwarica College of IT & E-commerce
+              Coventry University (Softwarica College)
             </p>
           </div>
           <div className="mt-4">
@@ -121,24 +136,10 @@ const Achievements = () => {
             </Link>
           </div>
         </div>
-        <div className="grid max-w-[36%] grid-cols-2 grid-rows-2 gap-4 ">
-          <div className="col-span-2 w-full">
-            <img src={Img2} alt="Bright night" className="rounded" />
-          </div>
-          <div className="w-full">
-            <img
-              src={Img1}
-              alt="Bright night"
-              className=" w-full rounded lg:h-[138px] xl:h-fit"
-            />
-          </div>
-          <div className="w-full">
-            <img src={Img3} alt="Bright night" className=" rounded" />
-          </div>
-        </div>
+        
       </div>
-      <div className="flex gap-10">
-        <div className="grid max-w-[36%] grid-cols-2 grid-rows-2 gap-4 lg:ml-[100px]">
+      <div className="lg:flex gap-10 mt-10">
+        <div className="grid lg:max-w-[36%] grid-cols-2 grid-rows-2 gap-4 lg:ml-[100px]">
           <div className="row-span-2">
             <img src={Img22} alt="Hult Prize" className="w-full rounded" />
           </div>
@@ -164,7 +165,7 @@ const Achievements = () => {
           </p>
           <div className="flex items-center gap-2 lg:gap-4 lg:pt-2">
             <h3
-              className="z-10 p-0 font-AvenirMedium text-[16px] uppercase leading-none text-white lg:text-[26px] xl:text-[30px]"
+              className="z-10 p-0 font-AvenirMedium text-[14px] uppercase leading-none text-white lg:text-[22px] xl:text-[26px]"
               data-aos="fade-left"
               data-aos-delay="400"
               data-aos-duration="800"
@@ -178,12 +179,12 @@ const Achievements = () => {
               data-aos-duration="800"
             ></div>
             <p
-              className="z-10 p-0 font-AvenirLight text-[16px] leading-none text-white/60 lg:text-[18px] xl:text-[20px]"
+              className="z-10 p-0 font-AvenirLight text-[14px] leading-none text-white/60 lg:text-[16px] xl:text-[18px] uppercase"
               data-aos="fade-left"
               data-aos-delay="400"
               data-aos-duration="800"
             >
-              Softwarica College of IT & E-commerce
+              Coventry University (Softwarica College)
             </p>
           </div>
           <div className="mt-4">
