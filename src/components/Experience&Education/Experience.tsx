@@ -19,16 +19,16 @@ const Experience = () => {
           data-aos-delay="300"
           data-aos-duration="800"
         >
-          Sep 2022 - Present
+          Apr 2024 – May 2024
         </p>
         <div className="flex items-center gap-2 lg:gap-4 lg:pt-2">
           <h3
-            className="z-10 p-0 font-AvenirMedium text-[16px] uppercase leading-none text-white lg:text-[26px] xl:text-[30px]"
+            className="z-10 p-0 font-AvenirMedium text-[16px] uppercase leading-none text-white lg:text-[26px] xl:text-[30px] uppercase"
             data-aos="fade-left"
             data-aos-delay="400"
             data-aos-duration="800"
           >
-            JUNIOR REACT DEVELOPER
+            Computer Lab Assistant (Part Time)
           </h3>
           <div
             className="h-[2px] w-10 rounded-full bg-white xl:h-1 "
@@ -37,24 +37,38 @@ const Experience = () => {
             data-aos-duration="800"
           ></div>
           <p
-            className="z-10 p-0 font-AvenirLight text-[16px] leading-none text-white/60 lg:text-[18px] xl:text-[20px]"
+            className="z-10 p-0 font-AvenirLight text-[16px] leading-none text-white/60 lg:text-[18px] xl:text-[20px] uppercase"
             data-aos="fade-left"
             data-aos-delay="400"
             data-aos-duration="800"
           >
-            LUCID TECHNOLOGY PVT. LTD.
+            Troy University
           </p>
         </div>
         <div className="mt-4">
-          <p
+        <p
             className="leading-wide max-w-[1040px] font-AvenirRoman text-[16px] text-white/60 lg:text-[20px] xl:text-[24px] xl:leading-10"
             data-aos="fade-up"
             data-aos-delay="200"
             data-aos-duration="1000"
           >
-            Created visually appealing website widgets that align with the
-            product's branding and style guidelines, maintaining consistency
-            throughout the web application.
+            ● Led lab sessions for 100+ students in the Introduction to Programming with Python course, providing guidance on coding concepts, debugging, and effective problem-solving techniques 
+          </p>
+          <p
+            className="leading-wide max-w-[1040px] font-AvenirRoman text-[16px] text-white/60 lg:text-[20px] xl:text-[24px] xl:leading-10 mt-2"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-duration="1000"
+          >
+            ● Assisted students enrolled in CS-2250 - Computer Science I with their final projects, offering technical support, debugging assistance, and feedback to improve project outcomes
+          </p>
+          <p
+            className="leading-wide max-w-[1040px] font-AvenirRoman text-[16px] text-white/60 lg:text-[20px] xl:text-[24px] xl:leading-10 mt-2"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-duration="1000"
+          >
+            ● Installed and configured operating systems and software across 30+ computers per semester, ensuring smooth lab operations for over 300 users
           </p>
         </div>
       </div>
@@ -65,16 +79,16 @@ const Experience = () => {
           data-aos-delay="300"
           data-aos-duration="800"
         >
-          NOV 2021 - MAY 2022
+          Dec 2021 – April 2022
         </p>
         <div className="flex items-center gap-2 lg:gap-4 lg:pt-2">
           <h3
-            className="z-10 p-0 font-AvenirMedium text-[16px] uppercase leading-none text-white lg:text-[26px] xl:text-[30px]"
+            className="z-10 p-0 font-AvenirMedium text-[16px] uppercase leading-none text-white lg:text-[26px] xl:text-[30px] uppercase"
             data-aos="fade-left"
             data-aos-delay="400"
             data-aos-duration="800"
           >
-            TEACHING ASSISTANT
+            Teaching Assistant
           </h3>
           <div
             className="h-[2px] w-10 rounded-full bg-white xl:h-1 "
@@ -83,12 +97,12 @@ const Experience = () => {
             data-aos-duration="800"
           ></div>
           <p
-            className="z-10 p-0 font-AvenirLight text-[16px] leading-none text-white/60 lg:text-[18px] xl:text-[20px]"
+            className="z-10 p-0 font-AvenirLight text-[16px] leading-none text-white/60 lg:text-[18px] xl:text-[20px] uppercase"
             data-aos="fade-left"
             data-aos-delay="400"
             data-aos-duration="800"
           >
-            SOFTWARICA COLLEGE OF IT & E-COMMERCE, WEB DEPARTMENT
+            Coventry University (Softwarica College)
           </p>
         </div>
         <div className="mt-4">
@@ -98,11 +112,17 @@ const Experience = () => {
             data-aos-delay="200"
             data-aos-duration="1000"
           >
-            Assisted teachers in planning and implementing quiz and lesson
-            presentations. Provided one-on-one support to students needing
-            additional help in projects during pandemic through Microsoft Teams.
-            Graded weekly quiz for Courses in Developing the Modern Web
-            (STW205CDE).
+            ● Graded weekly quizzes for 75+ students in the Developing the Modern Web course (STW205CDE), evaluating knowledge in React.js, REST, and Node.js, and ensuring timely feedback to improve learning outcomes by 15%
+
+          </p>
+          <p
+            className="leading-wide max-w-[1040px] font-AvenirRoman text-[16px] text-white/60 lg:text-[20px] xl:text-[24px] xl:leading-10 mt-4"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-duration="1000"
+          >
+            ● Provided one-on-one virtual support to 40+ students, assisting with final assignment submissions, topic
+            selection, and troubleshooting technical challenges, leading to a 95% project completion rate
           </p>
         </div>
       </div>
