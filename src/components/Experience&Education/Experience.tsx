@@ -23,7 +23,7 @@ const Experience = () => {
         </p>
         <div className="flex items-center gap-2 lg:gap-4 lg:pt-2">
           <h3
-            className="z-10 p-0 font-AvenirMedium text-[16px] uppercase leading-none text-white lg:text-[26px] xl:text-[30px] uppercase"
+            className="z-10 p-0 font-AvenirMedium text-[16px] uppercase leading-none text-white lg:text-[26px] xl:text-[30px]"
             data-aos="fade-left"
             data-aos-delay="400"
             data-aos-duration="800"
@@ -83,7 +83,7 @@ const Experience = () => {
         </p>
         <div className="flex items-center gap-2 lg:gap-4 lg:pt-2">
           <h3
-            className="z-10 p-0 font-AvenirMedium text-[16px] uppercase leading-none text-white lg:text-[26px] xl:text-[30px] uppercase"
+            className="z-10 p-0 font-AvenirMedium text-[16px] uppercase leading-none text-white lg:text-[26px] xl:text-[30px]"
             data-aos="fade-left"
             data-aos-delay="400"
             data-aos-duration="800"
