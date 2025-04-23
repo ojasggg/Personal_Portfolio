@@ -59,16 +59,16 @@ const Navbar = () => {
               <Link to={navItem.link}>{navItem.itemName}</Link>
             </li>
           ))}
-          <Link
-            className="cursor-pointer rounded-lg border border-white p-2 px-4 font-AvenirRoman text-[14px] uppercase"
-            to="/files/Ojash_Gurung_Resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            download
-          >
-            Resume
-          </Link>
         </ul>
+        <Link
+          className="cursor-pointer rounded-lg border border-white p-2 px-4 font-AvenirRoman text-[14px] uppercase"
+          to="/files/Ojash_Gurung_Resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          download
+        >
+          Resume
+        </Link>
         <div
           onClick={() => setToggleMenu((prev) => !prev)}
           className="lg:hidden"
