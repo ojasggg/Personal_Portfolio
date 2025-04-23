@@ -1,6 +1,7 @@
 const Hero = () => {
   return (
     <section
+      id="home"
       className="flex h-[70vh] flex-col items-center justify-center leading-none lg:h-[80vh]"
       data-scroll-section
     >
