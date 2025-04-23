@@ -1,22 +1,12 @@
-import Profile from "../../assets/Images/Profile/Profile.png";
-
 const Hero = () => {
   return (
     <section
+      id="home"
       className="flex h-[70vh] flex-col items-center justify-center leading-none lg:h-[80vh]"
       data-scroll-section
     >
-      {/* Hiding Image of my-self to land Internship */}
-      {/* <img
-        src={Profile}
-        alt="Profile Picture"
-        width={240}
-        className="mb-10"
-        data-aos="fade-down"
-        data-aos-delay="600"
-      /> */}
       <h1
-        className="sm:mt-[300px] lg:mt-0 mb-[46px] py-0 text-center font-Valencia text-[100px] leading-none text-white lg:text-[140px]"
+        className="mb-[46px] py-0 text-center font-Valencia text-[100px] leading-none text-white sm:mt-[300px] lg:mt-0 lg:text-[140px]"
         data-aos="fade-up"
         data-aos-delay="600"
       >
@@ -28,17 +18,39 @@ const Hero = () => {
         data-aos-delay="700"
       >
         <span className="leading-relaxed">
-          MSCS Student at Monroe University <span className="text-[12px] lg:text-sm">(Expected Graduation, Sep 2026)</span><br></br></span>
+          MSCS Student @ Monroe University{" "}
+          <span className="text-[1px] lg:text-sm">
+            (Expected Graduation, Dec 2025)
+          </span>
+          <br></br>
+        </span>
       </h3>
       <h3
-        className="w-[80%] mt-4 text-center font-AvenirRoman text-[22px] lg:text-[28px] leading-relaxed"
+        className="mt-4 w-[80%] text-center font-AvenirRoman text-[22px] leading-relaxed lg:text-[28px]"
         data-aos="fade-up"
         data-aos-delay="700"
       >
-        <span>| Software Development | Artificial Intelligence |<br></br>| Python | Rest Framework |</span>
+        <span>
+          | Software Engineer | Backend · AI · RAG · Cloud |<br />| Python ·
+          FastAPI · PostgreSQL · Next.js |
+        </span>
       </h3>
-      
-        
+      <p
+        className="mt-12 text-center text-[16px] text-gray-400"
+        data-aos="fade-up"
+        data-aos-delay="800"
+      >
+        Founder of{" "}
+        <a
+          className="text-lg font-medium text-white underline"
+          href="https://www.selfai.tech"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          SelfAI.
+        </a>{" "}
+        — building intelligent, shareable profiles powered by RAG pipelines.
+      </p>
     </section>
   );
 };

@@ -1,122 +1,86 @@
 import { BsArrowUpRight } from "react-icons/bs";
-import { Link, useParams } from "react-router-dom";
-import CryptoCurrency from "../../assets/Images/Project/CryptoCurrency.png";
-import { overallProjects } from "../../Constants/projectList";
+import { Link } from "react-router-dom";
+import { projects } from "../../constants/project";
 
 const ProjectIndividual = ({
   projectId,
 }: {
   projectId: string | undefined;
 }) => {
-  const Project = overallProjects.find((x) => x.projectId === projectId);
-  return (
-    <section className="mx-auto flex h-fit flex-col justify-center overflow-hidden py-10 lg:w-[800px] lg:py-20 xl:w-[1000px]">
-      <div className="mx-auto flex w-[95%] items-center justify-between">
-        <h1 className="p-0 font-AvenirHeavy text-[34px] uppercase leading-none ">
-          {Project?.projectName}
-        </h1>
-        <p className="font-AvenirMedium text-[14px] uppercase text-white/60 lg:text-[16px]">
-          {Project?.projectFor}
-        </p>
-      </div>
-      <img
-        src={Project?.projectCover}
-        alt="CryptoCurrency"
-        className="mt-10 object-contain"
-      />
+  const Project = projects.find((x) => x.projectId === projectId);
+  if (!Project) return null;
 
-      <div className="mt-8 flex items-center justify-center gap-4 lg:mt-[30px]">
+  return (
+    <section className="mx-auto flex h-fit flex-col justify-center overflow-hidden py-10 px-4 lg:w-[900px] lg:py-20 xl:w-[1100px]">
+      <header className="mb-10">
+        <h1 className="font-AvenirHeavy text-[32px] uppercase text-white lg:text-[48px]">
+          {Project.projectName}
+        </h1>
+        <p className="font-AvenirBook text-sm uppercase tracking-wider text-white/50">
+          {Project.projectType} · {Project.projectFor}
+        </p>
+      </header>
+
+      <div className="overflow-hidden rounded-lg border border-white/20">
+        <img
+          src={Project.projectCover}
+          alt={`${Project.projectName} Cover`}
+          className="w-full object-cover"
+        />
+      </div>
+
+      <div className="mt-8 flex flex-wrap gap-4">
         <Link
-          className="flex items-center gap-2 rounded-full bg-white py-[10px] px-[30px] text-black transition-all duration-200 ease-in hover:scale-105"
-          to={`${Project?.projectGithubLink}`}
+          to={Project.projectGithubLink}
           target="_blank"
-          data-aos="fade-left"
-          data-aos-delay="200"
-          data-aos-duration="1000"
+          className="flex items-center gap-2 rounded-md bg-white py-2 px-5 text-sm font-medium uppercase text-black transition-transform hover:scale-105"
         >
-          <p className="font-AvenirMedium text-[14px] uppercase lg:text-[16px]">
-            Github
-          </p>
-          <BsArrowUpRight size={16} />
+          Github <BsArrowUpRight size={16} />
         </Link>
-        {Project?.projectLiveLink && (
+        {Project.projectLiveLink && (
           <Link
-            className="flex items-center gap-2 rounded-full border border-white/60 bg-transparent py-[10px] px-[30px] transition-all duration-200 ease-in hover:scale-105"
-            to={`${Project?.projectLiveLink}`}
+            to={Project.projectLiveLink}
             target="_blank"
-            data-aos="fade-left"
-            data-aos-delay="300"
-            data-aos-duration="1000"
+            className="flex items-center gap-2 rounded-md border border-white/60 py-2 px-5 text-sm font-medium uppercase text-white/80 transition-transform hover:scale-105"
           >
-            <p className="font-AvenirMedium text-[14px] uppercase lg:text-[16px]">
-              Project Live
-            </p>
-            <BsArrowUpRight size={16} />
+            Live Site <BsArrowUpRight size={16} />
           </Link>
         )}
       </div>
-      <div>
-        <div className="mx-auto w-[95%] py-8">
-          <h4
-            className="border-b border-white pb-4 font-AvenirMedium text-[24px] leading-none"
-            data-aos="fade-left"
-            data-aos-delay="200"
-            data-aos-duration="1000"
-          >
-            About this project
-          </h4>
-          <p
-            className="mt-4 font-AvenirBook text-[18px] text-white/60"
-            data-aos="fade-right"
-            data-aos-delay="300"
-            data-aos-duration="1000"
-          >
-            {Project?.projectDesc}
-          </p>
-        </div>
-        <div className="mx-auto w-[95%] py-4">
-          <h6
-            className="border-b border-white pb-4 font-AvenirMedium text-[20px] leading-none"
-            data-aos="fade-left"
-            data-aos-delay="200"
-            data-aos-duration="1000"
-          >
-            Role in project
-          </h6>
-          <ul className="mt-4 list-inside list-disc font-AvenirBook text-[18px] text-white/60">
-            <li
-              data-aos="fade-down"
-              data-aos-delay="300"
-              data-aos-duration="1000"
-            >
-              {Project?.projectMyRole}
-            </li>
-          </ul>
-        </div>
 
-        <div className="mx-auto w-[95%] py-4">
-          <h4
-            className="border-b border-white pb-4 font-AvenirMedium text-[20px]"
-            data-aos="fade-left"
-            data-aos-delay="200"
-            data-aos-duration="1000"
-          >
-            Technical Sheet
-          </h4>
-          <ul className="mt-4 flex list-inside list-disc flex-col gap-3 font-AvenirBook text-[18px] text-white/60">
-            {Project?.projectTechnicalSheets?.map((tech, index) => (
-              <li
-                key={index}
-                data-aos="fade-down"
-                data-aos-delay={`${200 + index * 100}`}
-                data-aos-duration="1000"
-              >
-                {tech}
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
+      <section className="mt-12">
+        <h2 className="border-b border-white/30 pb-2 font-AvenirMedium text-[22px] text-white">
+          Project Overview
+        </h2>
+        <p className="mt-4 font-AvenirBook text-[18px] leading-relaxed text-white/70">
+          {Project.projectOverview || Project.projectDesc}
+        </p>
+      </section>
+
+      <section className="mt-10">
+        <h2 className="border-b border-white/30 pb-2 font-AvenirMedium text-[22px] text-white">
+          Role & Responsibilities
+        </h2>
+        <p className="mt-4 font-AvenirBook text-[18px] text-white/60">
+          {Project.projectMyRole}
+        </p>
+      </section>
+
+      <section className="mt-10">
+        <h2 className="border-b border-white/30 pb-2 font-AvenirMedium text-[22px] text-white">
+          Technologies Used
+        </h2>
+        <ul className="mt-4 flex flex-wrap gap-3 text-[16px] text-white/70">
+          {Project.projectTechnicalSheets.map((tech, index) => (
+            <li
+              key={index}
+              className="rounded-full border border-white/30 bg-white/5 px-4 py-1 text-sm"
+            >
+              {tech}
+            </li>
+          ))}
+        </ul>
+      </section>
     </section>
   );
 };

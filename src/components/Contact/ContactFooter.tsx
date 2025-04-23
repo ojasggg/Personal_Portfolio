@@ -21,11 +21,6 @@ const socialItems: socialItems = [
     link: "https://www.linkedin.com/in/ojash-gurung",
   },
   {
-    iconName: "Twitter",
-    logo: <BsTwitter size={14} />,
-    link: "https://twitter.com/codeOjash",
-  },
-  {
     iconName: "Email",
     logo: <MdEmail size={16} />,
     link: "#",
@@ -33,6 +28,7 @@ const socialItems: socialItems = [
 ];
 
 const ContactFooter = () => {
+  const currentYear = new Date().getFullYear();
   return (
     <div
       className="m-auto mt-10 flex w-[90%] justify-between border-t border-black/40 py-4 pb-4  lg:m-0 lg:w-full xl:py-5"
@@ -59,7 +55,7 @@ const ContactFooter = () => {
 
       <div>
         <p className="font-AvenirMedium text-[14px] text-black lg:text-[16px]">
-          &copy; 2024 Ojash Gurung
+          &copy; {currentYear} Ojash Gurung
         </p>
       </div>
     </div>

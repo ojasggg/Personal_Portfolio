@@ -8,7 +8,7 @@ import {
   Skills,
   Contact,
   Navbar,
-  Transition,
+  GoToTop,
   Achievement,
 } from "../components";
 
@@ -20,15 +20,28 @@ const Home = () => {
     <div id="main-container" data-scroll-container>
       {/* <Transition /> */}
       <Navbar />
+
       <div className="h-[100vh]">
         <Hero />
       </div>
-      {/* <AboutMe /> */}
-      <Project />
-      <Achievement />
-      <ExperienceAndEducation />
+      <div id="about-me">
+        <AboutMe />
+      </div>
+      <div id="projects">
+        <Project />
+      </div>
+      <div id="achievements">
+        <Achievement />
+      </div>
+      <div id="education">
+        <ExperienceAndEducation />
+      </div>
+      <div id="experience">
+        <ExperienceAndEducation />
+      </div>
       <Skills />
       <Contact />
+      
     </div>
   );
 };

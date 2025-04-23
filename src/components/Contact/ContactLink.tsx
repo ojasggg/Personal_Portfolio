@@ -20,7 +20,7 @@ const ContactLink = () => {
             data-aos-delay="200"
             data-aos-duration="600"
           >
-            <Link to="/home">home</Link>
+            <Link to="/#home">home</Link>
           </li>
           <li
             data-aos="fade-right"
@@ -34,7 +34,7 @@ const ContactLink = () => {
             data-aos-delay="400"
             data-aos-duration="600"
           >
-            <Link to="/projects">Projects</Link>
+            <Link to="/#projects">Projects</Link>
           </li>
           <li
             data-aos="fade-right"
@@ -48,7 +48,7 @@ const ContactLink = () => {
             data-aos-delay="600"
             data-aos-duration="600"
           >
-            <Link to="/about">about</Link>
+            <Link to="/#about-me">about</Link>
           </li>
         </ul>
       </div>
@@ -70,7 +70,12 @@ const ContactLink = () => {
             data-aos-offset="0"
             data-aos-duration="600"
           >
-            <Link to="/files/Resume.pdf" download target="_blank">
+            <Link
+              to="/files/Ojash_Gurung_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              download
+            >
               Resume
             </Link>
           </li>

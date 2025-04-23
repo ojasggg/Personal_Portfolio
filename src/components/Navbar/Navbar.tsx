@@ -2,17 +2,7 @@ import { useEffect, useState } from "react";
 import { HiOutlineMenuAlt1 } from "react-icons/hi";
 import { RxCross2 } from "react-icons/rx";
 import { Link, useLocation } from "react-router-dom";
-
-type navItems = {
-  itemName: string;
-  active: boolean;
-  link: string;
-};
-
-const navItems: navItems[] = [
-  { itemName: "Home", active: true, link: "/home" },
-  { itemName: "Projects", active: false, link: "/projects" },
-];
+import { navItems } from "../../constants/navitems";
 
 const Navbar = () => {
   const location = useLocation();
@@ -69,15 +59,16 @@ const Navbar = () => {
               <Link to={navItem.link}>{navItem.itemName}</Link>
             </li>
           ))}
-          <Link
-            className="cursor-pointer rounded-lg border border-white p-2 px-4 font-AvenirRoman text-[14px] uppercase"
-            to="/files/Resume.pdf"
-            target="_blank"
-            download
-          >
-            Resume
-          </Link>
         </ul>
+        <Link
+          className="cursor-pointer rounded-lg border border-white p-2 px-4 font-AvenirRoman text-[14px] uppercase"
+          to="/files/Ojash_Gurung_Resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          download
+        >
+          Resume
+        </Link>
         <div
           onClick={() => setToggleMenu((prev) => !prev)}
           className="lg:hidden"
@@ -110,9 +101,10 @@ const Navbar = () => {
             ))}
             <li className="mt-2 cursor-pointer rounded-lg border border-white p-4 px-6 text-center font-AvenirRoman text-[20px] uppercase">
               <Link
-                to="/files/Resume.pdf"
+                to="/files/Ojash_Gurung_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 download
-                target={"_blank"}
                 onClick={() => setToggleMenu(false)}
               >
                 Resume
