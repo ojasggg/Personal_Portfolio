@@ -12,6 +12,31 @@ interface experienceItems {
 
 export const experience: experienceItems[] = [
   {
+    role: "Software Engineer Intern",
+    company: "VeraAI Technologies",
+    location: "Remote",
+    duration: "June 2025 – Present",
+    description:
+      "Assisting in building an AI-driven platform that transforms home remodeling by automating design, pricing, and proposal workflows. Involved in developing scalable backend services and improving the platform’s overall performance and user experience.",
+    highlights: [
+      "Developing responsive and dynamic frontend components using Next.js for VeraAI’s remodeling platform",
+      "Collaborating with design and backend teams to build seamless user experiences for real-time 3D modeling and quoting workflows",
+      "Implementing UI features that enhance customer–remodeler collaboration during project design and proposal stages",
+    ],
+    techUsed: [
+      "Next.js",
+      "ReactJS",
+      "Firebase",
+      "Google Cloud Platform (GCP)",
+      "Azure",
+      "TypeScript",
+      "TailwindCSS",
+      "Vercel",
+    ],
+    logo: "/images/logos/veraaitech_logo.jpeg",
+    link: "https://veraai.co",
+  },
+  {
     role: "Founder / Full-Stack Developer",
     company: "SelfAI",
     location: "Queens, NY",
