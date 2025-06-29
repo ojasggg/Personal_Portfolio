@@ -90,8 +90,10 @@ const App = () => {
       </Routes>
       <GoToTop />
       {/* Socials Fixed */}
-      <div className="fixed bottom-0 z-[100] hidden md:right-[70px] lg:right-[70px] lg:flex xl:right-[100px]">
+      <div className="fixed top-0 z-[100] hidden md:right-[70px] lg:right-[70px] lg:flex xl:right-[100px]">
         <div className="flex flex-col items-center gap-8">
+          <div className="h-16 w-[2px] rounded-full bg-white/60"></div>
+
           <ul className="flex flex-col items-center gap-[30px] text-white/60">
             {socialItems.map((socialItem, index) => (
               <li
@@ -117,7 +119,6 @@ const App = () => {
               </li>
             ))}
           </ul>
-          <div className="h-24 w-[2px] rounded-full bg-white/60"></div>
         </div>
       </div>
     </div>
