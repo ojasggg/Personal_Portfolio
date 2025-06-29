@@ -18,21 +18,30 @@ const Hero = () => {
         data-aos-delay="700"
       >
         <span className="leading-relaxed">
+          Software Developer Intern @ VeraAI{" "}
+        </span>
+      </h3>
+      <h3
+        className="w-[50%] text-center font-AvenirRoman text-[22px] lg:text-[28px]"
+        data-aos="fade-up"
+        data-aos-delay="700"
+      >
+        <span className="leading-relaxed">
           MSCS Student @ Monroe University{" "}
           <span className="text-[1px] lg:text-sm">
-            (Expected Graduation, Dec 2025)
+            (Expected Graduation, April 2026)
           </span>
           <br></br>
         </span>
       </h3>
       <h3
-        className="mt-4 w-[80%] text-center font-AvenirRoman text-[22px] leading-relaxed lg:text-[28px]"
+        className="mt-4 w-[80%] text-center font-AvenirRoman text-[22px] leading-relaxed text-gray-400 lg:text-[28px]"
         data-aos="fade-up"
         data-aos-delay="700"
       >
         <span>
-          | Software Engineer | Backend · AI · RAG · Cloud |<br />| Python ·
-          FastAPI · PostgreSQL · Next.js |
+          | FullStack · AI · RAG · Cloud |<br />| Python · Java · FastAPI ·
+          PostgreSQL · Next.js |
         </span>
       </h3>
       <p
